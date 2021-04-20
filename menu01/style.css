@@ -190,8 +190,8 @@ ul.tabs li.current a {
 .cont {
   width: 1280px;
   margin: 0 auto;
-  padding-top: 120px;
-  padding-bottom: 145px;
+  padding-top: 50px;
+  padding-bottom: 95px;
 }
 
 .cont01 h2 {
@@ -206,11 +206,11 @@ ul.tabs li.current a {
   width: 1280px;
   margin: 0 auto;
   padding-top: 50px;
-  padding-bottom: 50px;
+  padding-bottom: 95px;
   text-align: center;
 }
 
-.ci_title {
+.ci_title, .map_title {
   font-weight: 500;
   font-size: 28px;
   letter-spacing: -0.23px;
