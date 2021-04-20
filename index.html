@@ -5,6 +5,8 @@
     <title>더피치 : THE Peach</title>
     <link rel="shortcut icon" href="img/favicon.png" />
     <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700;900&display=swap" rel="stylesheet">
     <script src="script.js"></script>
   </head>
 
@@ -13,7 +15,7 @@
       <!--상단 SNS 아이콘 메뉴-->
       <div class="topbar">
         <div class="icon">
-          <a href="#"> <img src="img/instagram.png" width="28px" alt="인스타그램" 인스타그램>
+          <a href="https://www.instagram.com/thepeach_dron/"> <img src="img/instagram.png" width="28px" alt="인스타그램" 인스타그램>
           <a href="#"> <img src="img/youtube.png" width="28px" alt="유튜브" 유튜브>
         </div>
       </div>
@@ -30,7 +32,7 @@
             <i class="fa fa-caret-down"></i>
           </button>
           <div class="dropdown-content">
-            <a href="#">비디오</a>
+            <a href="#">교육 프로그램</a>
             <a href="#">고객 지원</a>
           </div>
         </div>
@@ -49,7 +51,7 @@
             <i class="fa fa-caret-down"></i>
           </button>
           <div class="dropdown-content">
-            <a href="#">기업 소개</a>
+            <a href="menu01/int.html">기업 소개</a>
             <a href="menu01/CI.html">CI 소개</a>
             <a href="menu01/wayto.html">찾아오시는 길</a>
           </div>
@@ -58,9 +60,39 @@
     </header>
 
     <!--메인 이미지-->
-    <div class="mainimg">
-      <img src="img/main.png" alt="메인이미지" 메인이미지>
+    <div class="maincont">
+      <div class="mainimg">
+        <img src="img/main.png" style="width:100%;">
+        <div class="maintext">
+          <img src="img/maintxt01.png" alt="메인텍스트" 메인텍스트><br>
+          기술과 사람의 융합, 세상의 진화를 돕는 혁신적인 기업,<br>
+          데이터로부터 가치를 창출하여 삶의 가치를 높여주는 기업
+        </div>
+      </div>
     </div>
+
+    <!-- 상단 이미지 슬라이드 -->
+    <!--
+    <div class="slideshow-container">
+      <div class="mySlides fade">
+        <img src="img/slide01.png" style="width:100%">
+        <div class="slidetext">드론 기반 고부가가치<br>데이터 서비스 일등 기업 </div>
+      </div>
+    </div>
+    -->
+    <!-- float 취소 -->
+    <!--
+    <br class="clear">
+    -->
+    <!-- 하단 동그라미 (display none) -->
+    <!--
+    <div style="text-align:center">
+      <span class="dot" onclick="currentSlide(0)"></span>
+      <span class="dot" onclick="currentSlide(1)"></span>
+      <span class="dot" onclick="currentSlide(2)"></span>
+    </div>
+    -->
+
 
     <!-- sec01 -->
     <div class="cont">
@@ -191,37 +223,8 @@
 
     <!-- footer -->
     <div class="footer">
-
+      더피치(THE Peach) ｜ 대전광역시 유성구 테크노4로 17, C동 220호(관평동, 대덕비즈센터) ｜ E-MAIL : peach@thepeach.kr<br>
+      Copyright 2021. THE Peach. All Rights Reserved.
     </div>
-
-
   </body>
 </html>
-
-
-<!-- 우측 슬라이드 -->
-<!-- <div class="slideshow-container">
-  <div class="mySlides fade">
-    <img src="img/slide01.png" style="width:100%">
-    <div class="slidetext">오픈소스 비행제어컴퓨터(픽스호크)를 기반으로 Loiter(Hovering),<br>Return-to-Home, Geo-fence, Autonomous 기능 등<br>상업용 수준의 안전하고 최적화된 비행제어시스템 개발</div>
-  </div>
-  <div class="mySlides fade">
-    <img src="img/slide02.png" style="width:100%">
-    <div class="slidetext">정밀 농업 및 스마트 팩토링,<br>교각 및 시설물 검사 등 응용 시스템을 통하여<br>산업용(농업, 한전, 철도 등) 토탈 솔루션 제공</div>
-  </div>
-  <div class="mySlides fade">
-    <img src="img/slide03.png" style="width:100%">
-    <div class="slidetext">정밀 위치 센서, 지형지물 감지센서 등을 기반으로<br>실시간 산업용 데이터 획득, 처리 서비스<br>　</div>
-  </div>
-  <a class="prev" onclick="moveSlides(-1)">&#10094;</a>
-  <a class="next" onclick="moveSlides(1)">&#10095;</a>
-</div> -->
-<!-- float 취소 -->
-<!-- <br class="clear"> -->
-<!-- 하단 동그라미 (display none) -->
-<!-- <div style="text-align:center">
-  <span class="dot" onclick="currentSlide(0)"></span>
-  <span class="dot" onclick="currentSlide(1)"></span>
-  <span class="dot" onclick="currentSlide(2)"></span>
-</div>
--->

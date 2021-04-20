@@ -5,9 +5,7 @@ body, div {
   font-family: 'Noto Sans KR', sans-serif;
 }
 
-@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR&display=swap');
-
-/* 상단 고정 */
+/* 상하단 고정 */
 header {
   background-color: rgba(256,256,256,0.8);
   position: fixed;
@@ -107,7 +105,8 @@ header {
 
 /* Add a grey background color to dropdown links on hover */
 .dropdown-content a:hover {
-  background-color: #f4faff;
+  background-color: #6879ba;
+  color: white;
 }
 
 /* Show the dropdown menu on hover */
@@ -115,12 +114,46 @@ header {
   display: block;
 }
 
+/* -------------------------------------------------------------------------- */
 /* 메인 이미지 */
-.mainimg img {
+.maincont {
+  max-width: 1800px;
   display: block;
   margin: 0px auto;
-  padding-top: 145px;
-  width: 1800px;
+  margin-top: 148px;
+  position: relative;
+}
+
+.maintext {
+  line-height: 1.45;
+  color: #000000;
+  font-size: 20px;
+  letter-spacing: -0.23px;
+  position: absolute;
+  text-align: center;
+  top: 50%;
+  left: 50%;
+  margin-top: -120px;
+  margin-left: -350px;
+}
+
+.maincont .maintext img {
+  max-width: 700px;
+}
+
+/* -------------------------------------------------------------------------- */
+/* footer */
+.footer {
+  width: 100%;
+  margin: 0 auto;
+  background-color: #414953;
+  padding-top: 75px;
+  padding-bottom: 75px;
+  color: white;
+  font-weight: lighter;
+  font-size: 13px;
+  line-height: 1.75;
+  text-align: center;
 }
 
 /* -------------------------------------------------------------------------- */
@@ -128,14 +161,13 @@ header {
 .cont {
   width: 1280px;
   margin: 0 auto;
-  padding-top: 140px;
-  padding-bottom: 195px;
+  padding-top: 120px;
+  padding-bottom: 145px;
 }
 
 .cont01 h2 {
   margin-bottom: 10px;
 }
-
 
 .cont01 h2 img{
   height: 75px;
@@ -241,103 +273,6 @@ ul {
 }
 
 
-/* sec01 우측 슬라이드 관련 */
-.slideshow-container {
-  max-width: 500px;
-  max-height: 400px;
-  position: relative;
-  float: right;
-}
-
-/* float 취소하기 */
-.clear {
-  clear: both;
-}
-
-.slideshow-container .mySlides img {
-  height: 400px;
-}
-
-/* Hide the images by default */
-.mySlides {
-  display: none;
-}
-
-/* Next, previous buttons */
-.prev, .next {
-  cursor: pointer;
-  position: absolute;
-  top: 50%;
-  width: auto;
-  margin-top: -22px;
-  padding: 16px;
-  color: #f2f2f2;
-  font-weight: bold;
-  font-size: 18px;
-  transition: 0.6s ease;
-  border-radius: 0 3px 3px 0;
-  user-select: none;
-}
-
-/* Position the "next button" to the right */
-.next {
-  right: 0;
-  border-radius: 3px 0 0 3px;
-}
-
-/* On hover, add a black background color with a little bit see-through */
-.prev:hover, .next:hover {
-  background-color: rgba(0,0,0,0.8);
-}
-
-/* Caption text */
-.slidetext {
-  font-weight: normal;
-  line-height: 1.45;
-  margin-top: 16px;
-  color: #000000;
-  font-size: 15px;
-  padding: 8px 12px;
-  position: relative;
-  bottom: 8px;
-  width: 100%;
-  text-align: center;
-}
-
-/* The dots/bullets/indicators */
-.dot {
-  cursor: pointer;
-  height: 10px;
-  width: 10px;
-  margin: 0 2px;
-  background-color: none;
-  border-radius: 50px;
-  display: inline-block;
-  transition: background-color 0.6s ease;
-}
-
-.active, .dot:hover {
-  background-color: none;
-}
-
-/* Fading animation */
-.fade {
-  -webkit-animation-name: fade;
-  -webkit-animation-duration: 1.5s;
-  animation-name: fade;
-  animation-duration: 1.5s;
-}
-
-@-webkit-keyframes fade {
-  from {opacity: .4}
-  to {opacity: 1}
-}
-
-@keyframes fade {
-  from {opacity: .4}
-  to {opacity: 1}
-}
-
 /* -------------------------------------------------------------------------- */
 /* sec02 */
 
@@ -373,8 +308,6 @@ ul {
   width: 56%;
   min-height: 300px;
   padding: 22px 0 25px;
-  border-top: 2px solid #000;
-  border-bottom: 1px solid #ccc;
 }
 
 .write_input {
@@ -451,7 +384,7 @@ label {
   text-align: center;
   width: 180px;
   height: 47px;
-  margin: 40px 0;
+  margin: 20px 0;
   padding: 10px 0;
   font-size: 18px;
   border: none;
@@ -464,3 +397,125 @@ label {
   border: 1px solid #28a7e1;
   color: #28a7e1;
 }
+
+/* -------------------------------------------------------------------------- */
+/* 슬라이드 관련 */
+/*
+.slideshow-container {
+  max-width: 1800px;
+  margin: auto 0;
+  position: relative;
+  display: block;
+  margin: 0px auto;
+  margin-top: 145px;
+}
+*/
+
+/* float 취소하기 */
+.clear {
+  clear: both;
+}
+
+/*
+.slideshow-container .mySlides img {
+  height: 400px;
+}
+*/
+
+/* Hide the images by default */
+/*
+.mySlides {
+  display: none;
+}
+*/
+
+/* Next, previous buttons */
+/*
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  margin-top: -22px;
+  padding: 16px;
+  color: #f2f2f2;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+*/
+
+/* Position the "next button" to the right */
+/*
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+*/
+
+/* On hover, add a black background color with a little bit see-through */
+/*
+.prev:hover, .next:hover {
+  background-color: rgba(0,0,0,0.8);
+}
+*/
+
+/* Caption text */
+/*
+.slidetext {
+  font-weight: bold;
+  line-height: 1.45;
+  color: #000000;
+  font-size: 46px;
+  position: absolute;
+  top: 50%;
+*/
+  /* 두 줄이니까 한줄만큼 위로 당겨 세로 가운데 정렬 */
+/*
+  margin-top: -46px;
+  width: 100%;
+  text-align: center;
+}
+*/
+
+/* The dots/bullets/indicators */
+/*
+.dot {
+  cursor: pointer;
+  height: 10px;
+  width: 10px;
+  margin: 0 2px;
+  background-color: none;
+  border-radius: 50px;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+*/
+
+/*
+.active, .dot:hover {
+  background-color: none;
+}
+*/
+
+/* Fading animation */
+/*
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1s;
+  animation-name: fade;
+  animation-duration: 1s;
+}
+
+@-webkit-keyframes fade {
+  from {opacity: .8}
+  to {opacity: 1}
+}
+
+@keyframes fade {
+  from {opacity: .8}
+  to {opacity: 1}
+}
+*/
