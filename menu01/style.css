@@ -201,8 +201,8 @@ ul.tabs li.current a {
 }
 
 /* -------------------------------------------------------------------------- */
-/* CI */
-.ci_wrap {
+/* CI, wayto */
+.ci_wrap, .wayto {
   width: 1280px;
   margin: 0 auto;
   padding-top: 50px;
