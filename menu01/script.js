@@ -1,10 +1,11 @@
-var mapContainer = document.getElementById('wayto'). //지도를 표시할 div
-  mapOption = {
-    center: new kakao.maps.LatLng(36.43237, 127.39426), //지도의 중심좌표
-    level: 3 //지도의 확대 레벨
-  };
+var container = document.getElementById('map'); //지도를 담을 영역의 DOM 레퍼런스
 
-var map = new kakao.maps.Map(mapContainer, mapOption); //지도 생성
+var options = {
+  center: new kakao.maps.LatLng(36.43237, 127.39426), //지도의 중심좌표
+  level: 3 //지도의 확대 레벨
+}
+
+var map = new kakao.maps.Map(container, options);
 
 //마커가 표시될 위치
 var markerPosition = new kakao.maps.LatLng(36.43237, 127.39426);
