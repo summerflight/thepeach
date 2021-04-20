@@ -1,11 +1,11 @@
 var mapContainer = document.getElementById('map'); //지도를 담을 영역의 DOM 레퍼런스
 
 var mapOption = {
-  center: new kakao.maps.LatLng(36.43237, 127.39426), //지도의 중심좌표
+  center: new window.kakao.maps.LatLng(36.43237, 127.39426), //지도의 중심좌표
   level: 3 //지도의 확대 레벨
 }
 
-var map = new kakao.maps.Map(mapContainer, mapOption);
+var map = new window.kakao.maps.Map(mapContainer, mapOption);
 
 //마커가 표시될 위치
 //var markerPosition = new kakao.maps.LatLng(36.43237, 127.39426);
