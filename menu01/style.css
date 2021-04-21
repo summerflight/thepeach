@@ -269,5 +269,5 @@ ul.tabs li.current a {
 }
 
 .mapbox a {
-  color: black;
+  text-decoration: none;
 }
