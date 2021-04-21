@@ -258,9 +258,16 @@ ul.tabs li.current a {
 .map {
   width: 1280px;
   margin: 0 auto;
-  border: 1px solid #eaeaea;
 }
 
 .mapcont {
   padding-bottom: 40px;
+}
+
+.mapbox {
+  border: 1px solid #eaeaea;
+}
+
+.mapbox a {
+  color: black;
 }
