@@ -8,7 +8,25 @@
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700;900&display=swap" rel="stylesheet">
     <script src="script.js"></script>
+    <!-- 카카오맵 -->
     <script type="text/javascript" src="//dapi.kakao.com/v2/maps/sdk.js?appkey=ac2092b53645b08d8939597958710784"></script>
+    <script>
+      var container = document.getElementById('map');
+      		var options = {
+      			center: new window.kakao.maps.LatLng(36.43237, 127.39426),
+      			level: 3
+      		};
+
+      		var map = new window.kakao.maps.Map(container, options);
+
+      //마커가 표시될 위치
+      var markerPosition = new window.kakao.maps.LatLng(36.43237, 127.39426);
+
+      //마커 생성
+      var marker = new window.kakao.maps.Marker ({
+        position: markerPosition
+      });
+    </script>
   </head>
 
   <body>
