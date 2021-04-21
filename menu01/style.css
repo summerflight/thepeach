@@ -259,3 +259,7 @@ ul.tabs li.current a {
   width: 1280px;
   margin: 0 auto;
 }
+
+.mapcont {
+  padding-bottom: 30px;
+}
