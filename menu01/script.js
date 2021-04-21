@@ -1,10 +1,10 @@
-var mapContainer = document.getElementById('map'). //지도를 표시할 div
-  mapOption = {
-    center: new window.kakao.maps.LatLng(36.43237, 127.39426), //지도의 중심좌표
-    level: 3 //지도의 확대 레벨
-  };
+var container = document.getElementById('map');
+		var options = {
+			center: new window.kakao.maps.LatLng(36.43237, 127.39426),
+			level: 3
+		};
 
-var map = new window.kakao.maps.Map(mapContainer, mapOption); //지도 생성
+		var map = new window.kakao.maps.Map(container, options);
 
 //마커가 표시될 위치
 var markerPosition = new window.kakao.maps.LatLng(36.43237, 127.39426);
