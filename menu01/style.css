@@ -105,8 +105,8 @@ header {
 
 /* Add a grey background color to dropdown links on hover */
 .dropdown-content a:hover {
-  background-color: #6879ba;
-  color: white;
+  color: #2EA7E0;
+  font-weight: 600;
 }
 
 /* Show the dropdown menu on hover */
@@ -201,7 +201,7 @@ ul.tabs li.current a {
 }
 
 /* -------------------------------------------------------------------------- */
-/* CI, wayto */
+/* CI, wayto, int */
 .ci_wrap, .wayto {
   width: 1280px;
   margin: 0 auto;
@@ -210,10 +210,86 @@ ul.tabs li.current a {
   text-align: center;
 }
 
-.ci_title, .map_title {
+.int_wrap {
+  width: 1280px;
+  margin: 0 auto;
+  padding-top: 50px;
+  text-align: center;
+}
+
+.int_history {
+  width: 1280px;
+  margin: 0 auto;
+  padding-top: 80px;
+  text-align: center;
+}
+
+.int02, .int03 {
+  text-align: center;
+  width: 1280px;
+  margin: 0 auto;
+  padding-bottom: 50px;
+}
+
+.int02_bg {
+    background-color: #fafafa;
+}
+
+.int03_bg {
+  background-color: #fafafa;
+}
+
+.ci_title, .map_title, .int_title, .int_title02 {
   font-weight: 500;
   font-size: 28px;
   letter-spacing: -0.23px;
+}
+
+.int_title {
+  font-family: 'Roboto Slab', serif;
+}
+
+/*미션, 비전*/
+.int_title02 {
+  font-family: 'Roboto Slab', serif;
+  margin-top: 60px;
+}
+
+.mission, .vision {
+  padding-top: 100px;
+  width: 50%;
+}
+
+.mission {
+  float: left;
+}
+
+.vision {
+  float: right;
+}
+
+/* 조직도 */
+
+.int03 {
+  padding-top: 100px;
+}
+
+.int03 img {
+  padding-top: 50px;
+}
+
+.org {
+  padding-top: 80px;
+}
+
+.int01 img {
+  padding-top: 55px;
+  padding-bottom: 40px;
+}
+
+.int02 img {
+  padding-top: 30px;
+  padding-bottom: 20px;
 }
 
 .symbol img {
@@ -229,6 +305,10 @@ ul.tabs li.current a {
 .symbol, .signature {
   padding-bottom: 60px;
   border-bottom: 1px solid #eaeaea;
+}
+
+.int01 {
+  padding-bottom: 60px;
 }
 
 .signature_title, .color_title {
@@ -247,8 +327,12 @@ ul.tabs li.current a {
   padding-bottom: 30px;
 }
 
-.ci_wrap p {
+.ci_wrap p, .int_cont p, .int02 p {
   font-weight: 300;
+}
+
+.int_cont p b, .int_history b {
+  color: #2EA7E0;
 }
 
 .color_cont {
@@ -272,3 +356,43 @@ ul.tabs li.current a {
   text-decoration: none;
   color: black;
 }
+
+/* -------------------------------------------------------------------------- */
+/* history */
+.history {
+  padding-top: 120px;
+}
+.history_list                                                   { position: relative; width: 100%; text-align: left; padding: 0px; display: inline-block; zoom: 1; *display: inline; z-index: 2; text-align: center; height: 500px;}
+.history_list .history_deco                                     { display: block; position: absolute; top: 380px; right: 200px; }
+/*.history_list::before                                         { position: absolute; left: 50%; top: 0px; content: ""; width: 30px; height: 30px; background: #73a943; border-radius: 99px; transform: translate(-50%,0); }*/
+
+.history_list > ul                                                  { display: inline-block; list-style: none; zoom: 1; *display: inline; min-width: 1280px; position: absolute; left: 50%; top: 95px; transform: translate(-50%,0); z-index: 4; }
+.history_list > ul > li                                             { float: left; width: calc(100%/4); transform: translateY(-96%); }
+.history_list > ul > li:nth-of-type(2n)                             { transform: translateY(0) }
+.history_list > ul > li:nth-of-type(2n) .list_box                   { padding: 130px 0 0; background-position: center top; }
+.history_list > ul > li:nth-of-type(2n) .list_box:nth-of-type(2n)   { padding: 0px; }
+.history_list > ul > li:nth-of-type(2n) .list_box ul                { padding: 0 0 50px; }
+.history_list > ul > li:nth-of-type(2n) .list_box::before           { position: absolute; top: 0; transform: translate(-50%,-5px); background: #96d3f0; }
+
+.history_list .list_box                                         { background: url(img/line_decoo.png) no-repeat center bottom; position: relative; width: auto; display: inline-block; zoom: 1; *display: inline; float: right; text-align: left; clear: both; padding: 0 0 50px; }
+.history_list .list_box::before                                 { position: absolute; left: 50%; bottom: 0; width: 30px; height: 30px; border-radius: 99px; background: #2ea7e0; content: ""; transform: translate(-50%,15px); z-index: 3; }
+.history_list .list_box .history_title                          { display: block; width: 100%; font-size: 56px; font-weight: bold; color: #222; }
+.history_list .list_box ul                                      { width: 100%; padding: 0 0 80px; }
+.history_list .list_box ul li                                   { display: inline-block; zoom: 1; *display: inline; width: 100%; font-size: 15px; line-height: 1.35; font-weight: 400; color: #222; padding: 3px 0; }
+.history_list .list_box ul li span                              { float: left; width: calc(100% - 100px); word-break: keep-all; }
+.history_list .list_box ul li .d_span                           { float: left; width: 100px; }
+.history_list .list_box ul li .history_date                     { color: #065595; display: inline-block; padding-right: 10px; padding-left: 0; }
+.history_list .list_box:nth-of-type(2n)                         { float: left; text-align: right; clear: both; padding: 0px 40px 68px; }
+.history_list .list_box:nth-of-type(2n)::before                 { left: auto; right: 0px; transform: translate(-50%,0); }
+.history_list .list_box:nth-of-type(2n) ul li span              { padding-right: 55px; padding-left: 0; }
+.history_list .list_box:nth-of-type(2n) ul li .history_date     { color: #065595; display: inline-block; padding-left: 10px; padding-right: 0; }
+.history_list .list_line                                        { position: absolute; width: 100%; height: 1px; background-color: #c7c7c6; z-index: 2; top: 120px; left: 0; }
+.history_list .list_line span                                   { background-image: url(img/line_arrow1.png); background-repeat: no-repeat; background-position: center right; display: block; width: 100%; min-height: 100px; /* border: 1px solid red; */ transform: translateY(-50%); }
+
+.cont-box {
+    padding: 38px 38px;
+}
+
+.cont-box1                      { max-width: 1280px; padding-bottom: 200px; margin: 0 auto; }
+.cont-box1 .box_title           { display: block; width: 100%; text-align: left; }
+.cont-box2                      { width: 100%; padding-bottom: 180px; }
