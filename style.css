@@ -105,8 +105,8 @@ header {
 
 /* Add a grey background color to dropdown links on hover */
 .dropdown-content a:hover {
-  background-color: #6879ba;
-  color: white;
+  color: #2EA7E0;
+  font-weight: 600;
 }
 
 /* Show the dropdown menu on hover */
@@ -122,23 +122,27 @@ header {
   margin: 0px auto;
   margin-top: 148px;
   position: relative;
+  text-align: center;
 }
 
 .maintext {
   line-height: 1.45;
   color: #000000;
   font-size: 20px;
+  font-weight: 400;
   letter-spacing: -0.23px;
   position: absolute;
-  text-align: center;
+  /* 이미지 정가운데 텍스트 정렬 */
   top: 50%;
   left: 50%;
-  margin-top: -120px;
-  margin-left: -350px;
+  transform: translate(-50%,-50%);
 }
 
-.maincont .maintext img {
-  max-width: 700px;
+.maintext h1 {
+  font-family: 'Roboto Slab', serif;
+  font-weight: 500;
+  font-size: 46px;
+  letter-spacing: -0.23px;
 }
 
 /* -------------------------------------------------------------------------- */
@@ -161,8 +165,8 @@ header {
 .cont {
   width: 1280px;
   margin: 0 auto;
-  padding-top: 120px;
-  padding-bottom: 145px;
+  padding-top: 100px;
+  padding-bottom: 125px;
 }
 
 .cont01 h2 {
@@ -174,9 +178,9 @@ header {
 }
 
 .cont .cont01 > p {
-  font-size: 16px;
+  font-size: 17px;
   font-weight: normal;
-  line-height: 1.75;
+  line-height: 1.55;
   margin-top: 10px;
   color: #000000;
 }
@@ -238,7 +242,7 @@ ul {
 }
 
 .main_fac ul li:last-child {margin-right: 0;}
-.main_fac ul li small {font-size: 13.5px; color: #4f4f4f;}
+.main_fac ul li small {font-size: 14px; color: #4f4f4f; font-weight: 400;}
 
 .main_fac p {
   font-size: 18px;
@@ -280,7 +284,7 @@ ul {
 .centerimg img {
   display: block;
   margin: 0px auto;
-  width: 1800px;
+  width: 1280px;
 }
 
 /* sec02 텍스트 정렬 */
@@ -294,109 +298,71 @@ ul {
 }
 
 .cont .cont02 > p {
-  font-size: 16px;
+  font-size: 17px;
   font-weight: normal;
-  line-height: 1.75;
+  line-height: 1.55;
   margin-top: 10px;
   color: #000000;
   text-align: right;
 }
 
-/* 메일 폼 */
-.write_form {
-  margin-top: 100px;
-  width: 56%;
-  min-height: 300px;
-  padding: 22px 0 25px;
+/* -------------------------------------------------------------------------- */
+/* 메일 보내기 */
+aside {
+    background: #1f8dd6; /* same color as selected state on site menu */
+    padding: 0.3em 1em;
+    border-radius: 3px;
+    color: #fff;
+    margin-bottom: 2em;
 }
 
-.write_input {
+textarea {
   width: 100%;
-  display: inline-block;
-  zoom: 1;
-  text-align: left;
-  margin: 10px 0;
 }
 
-.wd_50 {
-  float: left;
-  width: 50%;
+.content-head {
+  font-weight: 400;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  margin: 2em 0 1em;
 }
 
-.write_input .wd_50 label span {
-  display: block;
-  width: 50px;
-  float: left;
-  margin: 7px 0;
-  margin-right: 4%;
-  font-size: 18px;
-  color: #000;
-  white-space: nowrap;
-}
-
-.write_input label span {
-  display: block;
-  width: 50px;
-  float: left;
-  margin: 7px 0;
-  margin-right: 2%;
-  font-size: 18px;
-  color: #000;
-  white-space: nowrap;
-}
-
-.write_input .w_88 {
-  width: 22%;
-}
-
-.write_input .w_186 {
-  width: 186px;
-}
-
-.write_input input {
-  height: 43px;
-  border: 1px solid #dddddd;
-}
-
-.write_input label select {
-  width: 123px;
-  height: 43px;
-  background: #fff;
-  border: 1px solid #ddd;
-  font-size: 18px;
-}
-
-.write_input textarea {
-  width: 90%;
-  height: 100px;
-  border: 1px solid #dddddd;
-}
-
-label {
-  vertical-align: middle;
-  font-size: 1em;
-}
-
-/* 버튼 */
-.inquiry_write_wrap .inquiry_btn {
-  transition: 0.3s;
-  display: block;
+.is-center {
   text-align: center;
-  width: 180px;
-  height: 47px;
-  margin: 20px 0;
-  padding: 10px 0;
-  font-size: 18px;
-  border: none;
-  background: #28a7e1;
-  color: #fff;
 }
 
-.inquiry_write_wrap .inquiry_btn:hover {
-  background: #fff;
-  border: 1px solid #28a7e1;
-  color: #28a7e1;
+.button-success {
+  color: white;
+  border-radius: 4px;
+  text-shadow: 0 1px 1px rgba(0, 0, 0, 0.2);
+  background: #2EA7E0;
 }
+
+.button-xlarge {
+  font-size: 125%;
+}
+
+.form-elements button {
+  float: right;
+}
+
+#name {
+  width: 100%
+}
+
+#email {
+  width: 40%;
+}
+
+#phone {
+  width: 40%;
+}
+
+.honeypot-field {
+  display: none;
+}
+
+
 
 /* -------------------------------------------------------------------------- */
 /* 슬라이드 관련 */

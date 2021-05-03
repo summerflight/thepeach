@@ -5,8 +5,12 @@
     <title>더피치 : THE Peach</title>
     <link rel="shortcut icon" href="img/favicon.png" />
     <link rel="stylesheet" href="style.css">
+    <!-- 구글 폰트 -->
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700;900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@500&display=swap" rel="stylesheet">
+    <!-- 스크롤효과 -->
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     <script src="script.js"></script>
   </head>
 
@@ -15,41 +19,35 @@
       <!--상단 SNS 아이콘 메뉴-->
       <div class="topbar">
         <div class="icon">
-          <a href="https://www.instagram.com/thepeach_dron/"> <img src="img/instagram.png" width="28px" alt="인스타그램" 인스타그램>
-          <a href="#"> <img src="img/youtube.png" width="28px" alt="유튜브" 유튜브>
+          <a href="https://www.instagram.com/thepeach_dron/" target="_blank"> <img src="img/instagram.png" width="28px" alt="인스타그램" 인스타그램>
+          <a href="https://www.youtube.com/channel/UCNbgejsRpeca6cLcX0nMJKw" target="_blank"> <img src="img/youtube.png" width="28px" alt="유튜브" 유튜브>
         </div>
       </div>
 
       <!--상단 메뉴-->
-      <div class="navbar">
+      <div class="navbar" data-aos="fade" data-aos-duration="900">
         <div id="logo">
           <a href="index.html">
             <img src="img/logo.png" width="150px" alt="더피치" title>
           </a>
         </div>
         <div class="dropdown">
-          <button class="dropbtn"><b>커뮤니티</b>
-            <i class="fa fa-caret-down"></i>
-          </button>
+          <button class="dropbtn"><b>커뮤니티</b></button>
           <div class="dropdown-content">
-            <a href="#">교육 프로그램</a>
-            <a href="#">고객 지원</a>
+            <a href="menu03/edu.html">교육 프로그램</a>
+            <a href="menu03/customer.html">고객 지원</a>
           </div>
         </div>
         <div class="dropdown">
-          <button class="dropbtn"><b>제품/기술</b>
-            <i class="fa fa-caret-down"></i>
-          </button>
+          <button class="dropbtn"><b>제품/기술</b></button>
           <div class="dropdown-content">
-            <a href="#">제품</a>
-            <a href="#">솔루션</a>
-            <a href="#">서비스</a>
+            <a href="menu02/product.html">제품</a>
+            <a href="menu02/solution.html">솔루션</a>
+            <a href="menu02/service.html">서비스</a>
           </div>
         </div>
         <div class="dropdown">
-          <button class="dropbtn"><b>더피치</b>
-            <i class="fa fa-caret-down"></i>
-          </button>
+          <button class="dropbtn"><b>더피치</b></button>
           <div class="dropdown-content">
             <a href="menu01/int.html">기업 소개</a>
             <a href="menu01/CI.html">CI 소개</a>
@@ -61,12 +59,11 @@
 
     <!--메인 이미지-->
     <div class="maincont">
-      <div class="mainimg">
+      <div class="mainimg" data-aos="fade" data-aos-duration="1500">
         <img src="img/main.png" style="width:100%;">
         <div class="maintext">
-          <img src="img/maintxt01.png" alt="메인텍스트" 메인텍스트><br>
-          기술과 사람의 융합, 세상의 진화를 돕는 혁신적인 기업,<br>
-          데이터로부터 가치를 창출하여 삶의 가치를 높여주는 기업
+          <h1>Drone based data service company</h1>
+          데이터로부터 가치를 창출하여, 삶의 가치를 높여주는 기업
         </div>
       </div>
     </div>
@@ -97,7 +94,7 @@
     <!-- sec01 -->
     <div class="cont">
       <!-- 좌측 텍스트 -->
-      <div class="cont01">
+      <div class="cont01" data-aos="fade" data-aos-duration="1500">
         <h2>
           <img src="img/cont01.png" alt="더피치의 솔루션" 더피치의 솔루션>
         </h2>
@@ -111,19 +108,19 @@
         <div class="bx-wrapper">
           <div class="bx-viewport">
             <ul>
-              <li>
+              <li data-aos="slide-up" data-aos-duration="1500">
                 <div class="main_fac_bg fac01"></div>
                 <small>오픈소스 비행제어컴퓨터(픽스호크)를 기반으로<br>안전하고 최적화된 비행제어시스템 개발</small>
                 <p>국산비행제어시스템</p>
                 <a href="#"><span class="view mgt">MORE</span></a>
               </li>
-              <li>
+              <li data-aos="slide-up" data-aos-duration="2000">
                 <div class="main_fac_bg fac02"></div>
                 <small>정밀 농업 및 스마트 팩토링, 교각 및 시설물 검사 등<br>산업용(농업, 한전, 철도 등) 토탈 솔루션 제공</small>
                 <p>산업용 임무 서비스 플랫폼</p>
                 <a href="#"><span class="view">MORE</span></a>
               </li>
-              <li>
+              <li data-aos="slide-up" data-aos-duration="2500">
                 <div class="main_fac_bg fac03"></div>
                 <small>정밀 위치 센서, 지형지물 감지센서 등을 기반으로<br>실시간 산업용 데이터 획득, 처리 서비스</small>
                 <p>정밀 농업용 데이터 서비스</p>
@@ -136,14 +133,14 @@
     </div>
 
     <!-- 중간 이미지 -->
-    <div class="centerimg">
+    <div class="centerimg" data-aos="fade" data-aos-duration="1500">
       <img src="img/center.png" alt="센터이미지" 센터이미지>
     </div>
 
     <!-- sec02 -->
     <div class="cont">
       <!-- 우측 텍스트 -->
-      <div class="cont02">
+      <div class="cont02" data-aos="fade" data-aos-duration="1500">
         <h2>
           <img src="img/cont02.png" alt="파트너" 파트너>
         </h2>
@@ -152,73 +149,50 @@
           드론 기반 데이터 서비스 관련 문의 및 구직, 협력 파트너를 찾고 있습니다.<br>
           내용 확인 후 빠르고 정확한 답변을 드릴 수 있도록 하겠습니다.
         </p>
+        <br class="clear">
       </div>
       <!-- 메일 폼 -->
-      <div class="inquiry_write_wrap">
-			<form name="fwrite" id="fwrite" action="http://www.thepeach.kr/bbs/write_update.php" onsubmit="return fwrite_submit(this);" method="post" enctype="multipart/form-data" autocomplete="off">
-			<input type="hidden" name="uid" value="2021040809081261">
-			<input type="hidden" name="w" value="">
-			<input type="hidden" name="bo_table" value="inquiry">
-			<input type="hidden" name="wr_id" value="0">
-
-        <div class="write_form">
-        	<div class="write_input">
-        		<div class="wd_50"><label><span>성함</span><input type="text" name="wr_name" id="wr_name" required="" class="w_307 required"></label></div>
-        			<div class="wd_50"><label><span>연락처</span><input type="tel" name="wr_1" id="wr_1" required="" class="w_88 required"> - <input type="tel" name="wr_2" id="wr_2" required="" class="w_88 required"> - <input type="tel" name="wr_3" id="wr_3" required="" class="w_88 required"></label></div>
-        	</div>
-        	<div class="write_input">
-        		<label>
-        			<span>이메일</span><input type="text" name="wr_email1" id="wr_email1" class="w_186"> @ <input type="text" name="wr_email2" id="wr_email2" class="w_186">
-        			<select name="wr_email_sel" onchange="email_change(this.form);">
-        		    <option value="">직접입력</option>
-        			  <option value="naver.com">naver.com</option>
-        			  <option value="gmail.com">gmail.com</option>
-        			  <option value="daum.net">daum.net</option>
-        			  <option value="hanmail.net">hanmail.net</option>
-        			  <option value="nate.com">nate.com</option>
-        			</select>
-      				<input type="hidden" name="wr_email" id="wr_email">
-        		</label>
-        	</div>
-        			<script>
-        			function email_change(form) {
-        				var value = form.wr_email_sel[form.wr_email_sel.selectedIndex].value;
-        				if (value != "") {
-        					form.wr_email2.disabled = true;
-        					form.wr_email2.value = value;
-        				} else {
-        					form.wr_email2.disabled = false;
-        				}
-        				form.wr_email2.value = value;
-        				form.wr_email2.focus();
-        				return;
-        			}
-        				</script>
-
-        					<div class="write_input">
-        						<div class="wd_50">
-        							<label>
-        								<span>제목</span><input type="text" name="wr_subject" id="wr_subject" required="" class="w_307 required" maxlength="255">
-        							</label>
-        						</div>
-        						<div class="wd_50">
-        							<label>
-        								<span>구분</span>
-        								<select name="ca_name" id="ca_name" required="" class="required">
-        									<option value="">선택</option>
-        									<option value="서비스문의">서비스문의</option>
-        									<option value="파트너문의">파트너문의</option>
-        									<option value="구직문의">구직문의</option>
-        									<option value="기타문의">기타문의</option>
-        								</select>
-        							</label>
-        						</div>
-        					</div>
-        					<div class="write_input"><label><span class="con_title">내용</span><textarea id="wr_content" name="wr_content" maxlength="65536"></textarea></label></div>
+      <!-- START HERE -->
+      <link rel="stylesheet" href="https://unpkg.com/purecss@1.0.0/build/pure-min.css">
+      <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+      <!-- Style The Contact Form How Ever You Prefer -->
+      <link rel="stylesheet" href="style.css">
+      <form class="gform pure-form pure-form-stacked" method="POST" data-email="example@email.net" action="https://script.google.com/macros/s/AKfycbx_Vs8QuFiRvvVbVSQzl_-PzEY-I9rLRQ6J6wawBw/exec" data-aos="fade" data-aos-duration="2000">
+        <!-- change the form action to your script url -->
+        <div class="form-elements">
+          <fieldset class="pure-group">
+            <label for="name">성함 : </label>
+            <input id="name" name="name" placeholder="성함을 입력해주세요.">
+          </fieldset>
+          <fieldset class="pure-group">
+            <label for="message">내용 : </label>
+            <textarea id="message" name="message" rows="10" placeholder="문의 사항을 입력해주세요."></textarea>
+          </fieldset>
+          <fieldset class="pure-group">
+            <label for="email">이메일 :</label>
+            <input id="email" name="email" type="email" value="" required="" placeholder="your.name@email.com">
+          </fieldset>
+          <fieldset class="pure-group">
+            <label for="phone">연락처 : </label>
+            <input id="phone" name="phone" placeholder="연락처를 입력해주세요.">
+          </fieldset>
+          <fieldset class="pure-group honeypot-field">
+            <label for="honeypot">To help avoid spam, utilize a Honeypot technique with a hidden text field; must be empty to submit the form! Otherwise, we assume the user is a spam bot.</label>
+            <input id="honeypot" type="text" name="honeypot" value="">
+          </fieldset>
+          <button class="button-success pure-button button-xlarge">
+            <i class="fa fa-paper-plane"></i>&nbsp;&nbsp;Send</button>
+          <br class="clear">
         </div>
-        <button type="submit" id="btn_submit" class="inquiry_btn">보내기</button>
+        <!-- Customise the Thankyou Message People See when they submit the form: -->
+        <div class="thankyou_message" style="display:none;">
+          <h2>문의 주셔서 감사합니다!
+            확인 후 회신드리겠습니다.</h2>
+        </div>
       </form>
-      </div>
+      <!-- Submit the Form to Google Using "AJAX" -->
+      <script data-cfasync="false" src="form-submission-handler.js"></script>
+    <!-- END -->
     </div>
 
     <!-- footer -->
@@ -226,5 +200,11 @@
       더피치(THE Peach) ｜ 대전광역시 유성구 테크노4로 17, C동 220호(관평동, 대덕비즈센터) ｜ E-MAIL : peach@thepeach.kr<br>
       Copyright 2021. THE Peach. All Rights Reserved.
     </div>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+
+    <!-- css효과 -->
+    <script>
+      AOS.init();
+    </script>
   </body>
 </html>
