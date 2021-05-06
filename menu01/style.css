@@ -177,11 +177,12 @@ ul.tabs li {
 }
 
 ul.tabs li.current {
-  background-color: #6879ba;
+  border-bottom: none;
 }
 
 ul.tabs li.current a {
-  color: white;
+  color: #2EA7E0;
+  font-weight: 600;
 }
 
 
@@ -228,7 +229,7 @@ ul.tabs li.current a {
   text-align: center;
   width: 1280px;
   margin: 0 auto;
-  padding-bottom: 50px;
+  padding-bottom: 80px;
 }
 
 .int02_bg {
@@ -272,10 +273,6 @@ ul.tabs li.current a {
 
 .int03 {
   padding-top: 100px;
-}
-
-.int03 img {
-  padding-top: 50px;
 }
 
 .org {
@@ -396,3 +393,122 @@ ul.tabs li.current a {
 .cont-box1                      { max-width: 1280px; padding-bottom: 200px; margin: 0 auto; }
 .cont-box1 .box_title           { display: block; width: 100%; text-align: left; }
 .cont-box2                      { width: 100%; padding-bottom: 180px; }
+
+/* -------------------------------------------------------------------------- */
+/* 조직도 */
+.tree {
+  display: inline-block;
+}
+/* 가운데 정렬 하기 위해 감싸는 int03에 text align center, tree에 inline-block */
+
+.tree ul {
+  padding-top: 25px;
+  padding-left: 0px;
+  position: relative;
+  transition: all 0.5s;
+  -webkit-transition: all 0.5s;
+  -moz-transition: all 0.5s;
+}
+
+.tree li {
+  float: left;
+  margin: 0 auto;
+  text-align: center;
+  list-style-type: none;
+  position: relative;
+  padding: 25px 5px 0 5px;
+  transition: all 0.5s;
+  -webkit-transition: all 0.5s;
+  -moz-transition: all 0.5s;
+}
+
+/* 커넥션 라인을 위해 before와 after사용 */
+.tree li::before, .tree li::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  right: 50%;
+  border-top: 1px solid #ccc;
+  width: 50%;
+  height: 25px;
+}
+
+.tree li::after {
+  right: auto;
+  left: 50%;
+  border-left: 1px solid #ccc;
+}
+
+/* 좌우 커넥터 제거 */
+.tree li:only-child::after, .tree li:only-child::before {
+  display: none;
+}
+
+/* 맨 위 여백 제거 */
+.tree li:only-child {
+  padding-top: 0;
+}
+
+/* 첫번째 요소 왼쪽 라인, 마지막 요소의 오른쪽 라인 제거 */
+.tree li:first-child::before, .tree li:last-child::after {
+  border: 0 none;
+}
+
+/* 마지막 노드의 수직 커넥터 adding back */
+.tree li:last-child::before {
+  border-right: 1px solid #ccc;
+  border-radius: 0 5px 0 0;
+  -webkit-border-radius: 0 5px 0 0;
+  -moz-border-radius: 0 5px 0 0;
+}
+
+.tree li:first-child::after {
+  border-radius: 5px 0 0 0;
+  -webkit-border-radius: 5px 0 0 0;
+  -moz-border-radius: 5px 0 0 0;
+}
+
+/* Time to add downward connectors from parents */
+.tree ul ul::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 50%;
+  border-left: 1px solid #ccc;
+  width: 0;
+  height: 25px;
+}
+
+.tree li span {
+  border: 1px solid #ccc;
+  padding: 10px;
+  width: 120px;
+  text-decoration: none;
+  color: #666;
+  display: inline-block;
+  border-radius: 5px;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  transition: all 0.5s;
+  -webkit-transition: all 0.5s;
+  -moz-transition: all 0.5s;
+}
+
+.tree .ceo {
+  padding: auto 0;
+  font-size: 17px;
+  background-color: #2ea7e0;
+  color: white;
+}
+
+.tree .second {
+  font-size: 15px;
+  color: white;
+  background-color: #96d3f0;
+}
+
+.tree .third {
+  font-size: 15px;
+  background-color: white;
+  margin-bottom: 40px;
+}
