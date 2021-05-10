@@ -1,0 +1,200 @@
+body, div {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+  font-family: 'Noto Sans KR', sans-serif;
+}
+
+/* 상하단 고정 */
+header {
+  background-color: rgba(256,256,256,0.8);
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 2000;
+  border-bottom: 1px solid #eaeaea;
+}
+
+/* 상단 SNS 메뉴 아이콘 */
+.topbar {
+  overflow: hidden;
+  background-color: none;
+  border-bottom: 1px solid #eaeaea;
+}
+
+.icon {
+  margin: 0 auto;
+  max-width: 1280px;
+}
+
+.topbar a {
+  float: right;
+  padding: 5px;
+}
+
+#logo a {
+  padding: 20px 20px 20px 0px;
+}
+
+/* Navbar container */
+.navbar {
+  overflow: hidden;
+  font-family: Arial;
+  width: 100%;
+  max-width: 1280px;
+  margin: 0 auto;
+}
+
+/* Links inside the navbar */
+.navbar a {
+  float: left;
+  font-size: 16px;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+/* The dropdown container - 더피치, 제품기술, 커뮤니티 */
+.dropdown {
+  float: right;
+  overflow: hidden;
+}
+
+/* Dropdown button */
+.dropdown .dropbtn {
+  font-size: 16px;
+  border: none;
+  outline: none;
+  color: black;
+  min-width: 160px;
+  padding: 40px;
+  background-color: inherit;
+  font-family: inherit; /* Important for vertical align on mobile phones */
+  margin: 0; /* Important for vertical align on mobile phones */
+}
+
+/* Add a red background color to navbar links on hover */
+/* .navbar a:hover, .dropdown:hover .dropbtn {
+  background-color: red;
+} */
+
+/* Dropdown content (hidden by default) */
+.dropdown-content {
+  display: none;
+  position: relative;
+  background-color: none;
+  min-width: 160px;
+  /* box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2); */
+  z-index: 1;
+  margin-bottom: 15px;
+}
+
+/* Links inside the dropdown */
+.dropdown-content a {
+  float: none;
+  font-size: 15px;
+  color: black;
+  padding: auto;
+  text-decoration: none;
+  display: block;
+  text-align: center;
+  z-index: 1;
+}
+
+/* Add a grey background color to dropdown links on hover */
+.dropdown-content a:hover {
+  color: #2EA7E0;
+  font-weight: 600;
+}
+
+/* Show the dropdown menu on hover */
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+/* -------------------------------------------------------------------------- */
+/* 메인 이미지 */
+.upperimg img {
+  display: block;
+  margin: 0px auto;
+  padding-top: 148px;
+  width: 1800px;
+}
+
+/* -------------------------------------------------------------------------- */
+/* footer */
+.footer {
+  width: 100%;
+  margin: 0 auto;
+  background-color: #414953;
+  padding-top: 75px;
+  padding-bottom: 75px;
+  color: white;
+  font-weight: lighter;
+  font-size: 13px;
+  line-height: 1.75;
+  text-align: center;
+}
+
+/* -------------------------------------------------------------------------- */
+/* 탭 메뉴 */
+.tab-cont {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+.tab-cont a {
+  text-decoration: none;
+  color: black;
+  font-size: 15px;
+}
+
+li a {
+  display: block;
+}
+
+ul.tabs {
+  margin: 0px;
+  padding: 0px;
+  list-style: none;
+  text-align: center;
+}
+
+ul.tabs li {
+  margin: auto 0;
+  padding: 15px;
+  display: inline-block;
+  width: 30%;
+  cursor: pointer;
+  border: 1px solid #eaeaea;
+  text-align: center;
+}
+
+ul.tabs li.current {
+  border-bottom: none;
+}
+
+ul.tabs li.current a {
+  color: #2EA7E0;
+  font-weight: 600;
+}
+
+/* -------------------------------------------------------------------------- */
+/* cont, sec01 */
+.product {
+  width: 1280px;
+  margin: 0 auto;
+  padding-top: 50px;
+  padding-bottom: 145px;
+  text-align: center;
+}
+
+.pro_title {
+  font-weight: 500;
+  font-size: 28px;
+  letter-spacing: -0.23px;
+}
