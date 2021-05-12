@@ -221,7 +221,7 @@ ul.tabs li.current a {
 .int_history {
   width: 1280px;
   margin: 0 auto;
-  padding-top: 80px;
+  padding-top: 100px;
   text-align: center;
 }
 
@@ -233,7 +233,7 @@ ul.tabs li.current a {
 }
 
 .int02_bg {
-    background-color: #fafafa;
+  background-color: #fafafa;
 }
 
 .int03_bg {
@@ -248,6 +248,10 @@ ul.tabs li.current a {
 
 .int_title {
   font-family: 'Roboto Slab', serif;
+}
+
+.int_text {
+  font-size: 16px;
 }
 
 /*미션, 비전*/
@@ -509,6 +513,7 @@ ul.tabs li.current a {
 
 .tree .third {
   font-size: 15px;
+  padding: 15px auto;
   background-color: white;
   margin-bottom: 40px;
 }
