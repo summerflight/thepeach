@@ -95,6 +95,7 @@ header {
 .dropdown-content a {
   float: none;
   font-size: 15px;
+  font-weight: 400;
   color: black;
   padding: auto;
   text-decoration: none;
