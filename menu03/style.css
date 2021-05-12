@@ -187,26 +187,85 @@ ul.tabs li.current a {
 }
 
 /* -------------------------------------------------------------------------- */
-.edu_cont {
+.edu_cont, .cus01 {
   width: 1280px;
   margin: 0 auto;
   padding-top: 50px;
   text-align: center;
 }
 
-.edu_title {
+.cus02 {
+  background-color: #fafafa;
+  text-align: center;
+}
+
+.cus_bg {
+  margin: 0 auto;
+  padding-top: 50px;
+  text-align: center;
+  width: 1280px;
+}
+
+.cus_title {
   font-family: 'Roboto Slab', serif;
+  font-weight: 500;
   font-size: 28px;
   letter-spacing: -0.23px;
 }
 
-.edu_img_text {
-  text-align: left;
+.cus_cont {
+  width: 1280px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.github, .call {
+  width: 50%;
+}
+
+.github {
+  float: left;
+}
+
+.call {
+  float: right;
+}
+
+.edu_title {
+  display: block;
+  font-family: 'Roboto Slab', serif;
+  font-size: 28px;
+  letter-spacing: -0.23px;
+  padding-bottom: 20px;
+}
+
+.cus_kor {
+  font-weight: 500;
+  font-size: 28px;
+  letter-spacing: -0.23px;
+}
+
+.cus_text {
+  margin: 0;
+  padding-top: 10px;
+  padding-bottom: 30px;
+}
+
+.eduimg img {
+  width: 1280px;
+}
+
+.cus02 img {
+  width: 400px;
+  border: 1px solid #ccc;
+  border-radius: 30px;
+  margin-bottom: 95px;
 }
 
 .edu_cont ul {
   text-align: left;
-  list-style-type:
+  list-style-type: circle;
+  line-height: 1.8;
 }
 
 /* 테이블 */
@@ -220,6 +279,12 @@ ul.tabs li.current a {
 table {
   width: 100%;
   border-collapse: collapse;
+}
+
+caption {
+  caption-side: bottom;
+  text-align: right;
+  padding-top: 15px;
 }
 
 th {
