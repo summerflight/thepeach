@@ -194,6 +194,10 @@ ul.tabs li.current a {
   text-align: center;
 }
 
+.cus01 {
+  padding-bottom: 40px;
+}
+
 .cus02 {
   background-color: #fafafa;
   text-align: center;
@@ -204,6 +208,10 @@ ul.tabs li.current a {
   padding-top: 50px;
   text-align: center;
   width: 1280px;
+}
+
+.cus01_mail {
+  margin: 40px;
 }
 
 .cus_title {
@@ -312,4 +320,68 @@ td {
 
 .kj {
   background-color: #f5fafe;
+}
+
+/* -------------------------------------------------------------------------- */
+/* 메일 보내기 */
+aside {
+    background: #1f8dd6; /* same color as selected state on site menu */
+    padding: 0.3em 1em;
+    border-radius: 3px;
+    color: #fff;
+    margin-bottom: 2em;
+}
+
+textarea {
+  width: 100%;
+}
+
+.content-head {
+  font-weight: 400;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  margin: 2em 0 1em;
+}
+
+.is-center {
+  text-align: center;
+}
+
+.button-success {
+  color: white;
+  border-radius: 4px;
+  text-shadow: 0 1px 1px rgba(0, 0, 0, 0.2);
+  background: #2EA7E0;
+}
+
+.button-xlarge {
+  font-size: 125%;
+}
+
+.form-elements button {
+  float: right;
+}
+
+.form-elements {
+  text-align: left;
+}
+
+#name {
+  width: 100%
+}
+
+#email {
+  width: 40%;
+}
+
+#phone {
+  width: 40%;
+}
+
+.honeypot-field {
+  display: none;
+}
+
+.clear {
+  clear: both;
 }
