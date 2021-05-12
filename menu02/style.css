@@ -185,7 +185,7 @@ ul.tabs li.current a {
 
 /* -------------------------------------------------------------------------- */
 /* cont, sec01 */
-.product {
+.product, .solution, .service {
   width: 1280px;
   margin: 0 auto;
   padding-top: 50px;
@@ -193,8 +193,18 @@ ul.tabs li.current a {
   text-align: center;
 }
 
-.pro_title {
+.pro_title, .sol_title, .ser_title {
   font-weight: 500;
   font-size: 28px;
   letter-spacing: -0.23px;
+}
+
+.solcont img {
+  padding-top: 30px;
+  padding-bottom: 30px;
+  width: 100%;
+}
+
+.product img {
+  padding-top: 40px;
 }
