@@ -385,3 +385,24 @@ textarea {
 .clear {
   clear: both;
 }
+
+/*스마트폰*/
+@media (min-width : 320px) and (max-width : 820px) {
+  .navbar { width: 100%; }
+  .topbar .icon { width: 100%; }
+  .upperimg img { width: 100%; }
+  .tab-cont { width: 100%; }
+  ul .tabs { width: 100%; }
+  .cus01 { width: 100%; }
+  .cus_bg { width: 100%; }
+}
+/*테블릿*/
+@media (min-width : 821px) and (max-width : 1280px) {
+  .navbar { width: 100%; }
+  .topbar .icon { width: 100%; }
+  .upperimg img { width: 100%; }
+  .tab-cont { width: 100%; }
+  ul .tabs { width: 100%; }
+  .cus01 { width: 100%; }
+  .cus_bg { width: 100%; }
+}
