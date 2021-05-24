@@ -189,8 +189,16 @@ ul.tabs li.current a {
   width: 1280px;
   margin: 0 auto;
   padding-top: 50px;
-  padding-bottom: 145px;
+  padding-bottom: 95px;
   text-align: center;
+}
+
+.solcont2 {
+  width: 1280px;
+  margin: 0 auto;
+  padding-top: 90px;
+  padding-bottom: 95px;
+  width: 100%;
 }
 
 .pro_title, .sol_title, .ser_title {
@@ -199,12 +207,57 @@ ul.tabs li.current a {
   letter-spacing: -0.23px;
 }
 
-.solcont img {
-  padding-top: 30px;
-  padding-bottom: 30px;
-  width: 100%;
+.solcont img, .solcont2 img, .sercont img {
+  padding-top: 40px;
+  width: 1280px;
 }
 
 .product img {
   padding-top: 40px;
+}
+
+.solution_bg {
+  background-color: #fafafa;
+  text-align: center;
+}
+
+.sol_text {
+  margin: 0 auto;
+  text-align: left;
+  width: 1280px;
+}
+
+.sol_1, .sol_2 {
+  width: 50%;
+  float: left;
+}
+
+.sol_1 ul {
+  padding-left: 30px;
+}
+
+.sol_2 ul {
+  padding-left: 30px;
+  margin-left: 55px;
+}
+
+.sol_1 ul, .sol_2 ul {
+  font-size: 20px;
+  font-weight: 400;
+}
+
+.sol_1 li, .sol_2 li {
+  font-size: 17px;
+  font-weight: 300;
+  list-style: none;
+  margin-left: 0px;
+}
+
+.sol_1 ul::before, .sol_2 ul::before {
+  content: "\2022";
+  color: #2EA7E0;
+  font-weight: bold;
+  display: inline-block;
+  width: 1em;
+  margin-left: -1em;
 }
