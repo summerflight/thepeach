@@ -5,8 +5,6 @@ body, div {
   font-family: 'Noto Sans KR', sans-serif;
 }
 
-@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR&display=swap');
-
 /* 상하단 고정 */
 header {
   background-color: rgba(256,256,256,0.8);
@@ -205,7 +203,7 @@ ul.tabs li.current a {
 
 .cus_bg {
   margin: 0 auto;
-  padding-top: 50px;
+  padding-top: 90px;
   text-align: center;
   width: 1280px;
 }
@@ -272,8 +270,18 @@ ul.tabs li.current a {
 
 .edu_cont ul {
   text-align: left;
-  list-style-type: circle;
+  font-size: 17px;
+  list-style-type: none;
   line-height: 1.8;
+}
+
+.edu_cont ul li::before {
+  content: "\2022";
+  color: #2EA7E0;
+  font-weight: bold;
+  display: inline-block;
+  width: 1em;
+  margin-left: -1em;
 }
 
 /* 테이블 */
@@ -325,11 +333,11 @@ td {
 /* -------------------------------------------------------------------------- */
 /* 메일 보내기 */
 aside {
-    background: #1f8dd6; /* same color as selected state on site menu */
-    padding: 0.3em 1em;
-    border-radius: 3px;
-    color: #fff;
-    margin-bottom: 2em;
+  background: #1f8dd6; /* same color as selected state on site menu */
+  padding: 0.3em 1em;
+  border-radius: 3px;
+  color: #fff;
+  margin-bottom: 2em;
 }
 
 textarea {
@@ -367,15 +375,11 @@ textarea {
 }
 
 #name {
-  width: 100%
+  width: 100%;
 }
 
-#email {
-  width: 40%;
-}
-
-#phone {
-  width: 40%;
+#email, #phone {
+  width: 100%;
 }
 
 .honeypot-field {
@@ -393,9 +397,15 @@ textarea {
   .upperimg img { width: 100%; }
   .tab-cont { width: 100%; }
   ul .tabs { width: 100%; }
-  .cus01 { width: 100%; }
-  .cus_bg { width: 100%; }
+  .cus01 { width: 100%; padding-bottom: 65px; }
+  .cus01_mail { margin: 10px; }
+  .cus_bg { width: 100%; padding-top: 95px; }
+  #email, #phone { width: 100% }
+  .form-elements button { float: right; margin-top: 30px; width: 100%;}
+  .cus02 img { width: 80%; }
+  .github, .call { display: block; width: 100%; }
 }
+
 /*테블릿*/
 @media (min-width : 821px) and (max-width : 1280px) {
   .navbar { width: 100%; }
@@ -403,6 +413,10 @@ textarea {
   .upperimg img { width: 100%; }
   .tab-cont { width: 100%; }
   ul .tabs { width: 100%; }
-  .cus01 { width: 100%; }
-  .cus_bg { width: 100%; }
+  .cus01 { width: 100%; padding-bottom: 65px; }
+  .cus_bg { width: 100%; padding-top: 85px; }
+  #email, #phone { width: 100% }
+  .form-elements button { float: right; margin-top: 30px; width: 30%; }
+  .cus02 img { width: 80%; }
+
 }
