@@ -56,6 +56,11 @@ header {
   text-decoration: none;
 }
 
+.burger {
+  display: none;
+  cursor: pointer;
+}
+
 /* The dropdown container - 더피치, 제품기술, 커뮤니티 */
 .dropdown {
   float: right;
