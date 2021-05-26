@@ -109,7 +109,7 @@ header {
   z-index: 1;
 }
 
-/* Add a grey background color to dropdown links on hover */
+/* Add background color to dropdown links on hover */
 .dropdown-content a:hover {
   color: #2EA7E0;
   font-weight: 600;
@@ -336,7 +336,13 @@ li a{
 }
 
 /* sec02 텍스트 정렬 */
+.cont02 {
+  float: left;
+  width: 460px;
+}
+
 .cont02 h2 {
+  margin-top: 0px;
   margin-bottom: 10px;
 }
 
@@ -351,21 +357,16 @@ li a{
   line-height: 1.55;
   margin-top: 10px;
   color: #000000;
-  text-align: right;
 }
 
 /* -------------------------------------------------------------------------- */
 /* 메일 보내기 */
 aside {
-    background: #1f8dd6; /* same color as selected state on site menu */
-    padding: 0.3em 1em;
-    border-radius: 3px;
-    color: #fff;
-    margin-bottom: 2em;
-}
-
-textarea {
-  width: 100%;
+  background: #1f8dd6; /* same color as selected state on site menu */
+  padding: 0.3em 1em;
+  border-radius: 3px;
+  color: #fff;
+  margin-bottom: 2em;
 }
 
 .content-head {
@@ -390,27 +391,38 @@ textarea {
   font-size: 125%;
 }
 
+.form-elements {
+  width: 55%;
+  float: right;
+  border-top: 5px solid #5f5f5f;
+  border-bottom: 1px solid #ccc;
+  padding-top: 40px;
+  padding-bottom: 30px;
+  margin-top: 10px;
+}
+
 .form-elements button {
   float: right;
 }
 
-#name {
-  width: 100%
+#name, #email, #phone {
+  float: right;
+  width: 87%
 }
 
-#email {
-  width: 40%;
+textarea {
+  width: 87%;
+  float: right;
 }
 
-#phone {
-  width: 40%;
+.pure-form label {
+  float: left;
+  width: 10%;
 }
 
 .honeypot-field {
   display: none;
 }
-
-
 
 /* -------------------------------------------------------------------------- */
 /* 슬라이드 관련 */

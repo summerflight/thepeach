@@ -37,6 +37,7 @@
           <button class="dropbtn"><b>커뮤니티</b></button>
           <div class="dropdown-content">
             <a href="menu03/edu.html">교육 프로그램</a>
+            <a href="menu03/download.html">자료실</a>
             <a href="menu03/customer.html">고객 지원</a>
           </div>
         </div>
@@ -114,7 +115,7 @@
           더피치(THE Peach)는 드론의 핵심 기술을 국산화하고,<br>
           산업 분야의 드론 활용 서비스에 필요한 기술 개발에 매진하고 있습니다.
         </p>
-      </div>
+      </div><br class="clear">
       <!-- column -->
       <div class="main_fac">
         <div class="bx-wrapper">
@@ -146,19 +147,18 @@
 
     <!-- 중간 이미지 -->
     <div class="centerimg" data-aos="fade-up" data-aos-anchor-placement="top-bottom" data-aos-duration="1500">
-      <img src="img/center.png" alt="센터이미지" 센터이미지>
+      <img src="#" alt="센터이미지" 센터이미지>
     </div>
 
     <!-- sec02 -->
     <div class="cont">
-      <!-- 우측 텍스트 -->
+      <!-- 텍스트 -->
       <div class="cont02" data-aos="fade" data-aos-duration="1500">
-        <h2 style="text-align: right;">
+        <h2>
           더피치와 함께 할 파트너를 찾고 있습니다
         </h2>
         <p>
-          드론 기반 데이터 서비스 관련 문의 및 구직, 협력 파트너를 찾고 있습니다.<br>
-          내용 확인 후 빠르고 정확한 답변을 드릴 수 있도록 하겠습니다.
+          드론 기반 데이터 서비스 관련 문의 및 구직, 협력 파트너를 찾고 있습니다. 문의사항과 연락처를 남겨주시면 내용 확인 후 빠르고 정확한 답변을 드릴 수 있도록 하겠습니다.
         </p>
         <br class="clear">
       </div>
@@ -176,16 +176,16 @@
             <input id="name" name="name" placeholder="성함을 입력해주세요.">
           </fieldset>
           <fieldset class="pure-group">
-            <label for="message">내용 :</label>
-            <textarea id="message" name="message" rows="10" placeholder="문의 사항을 입력해주세요."></textarea>
-          </fieldset>
-          <fieldset class="pure-group">
             <label for="email">이메일 :</label>
             <input id="email" name="email" type="email" value="" required="" placeholder="이메일 주소를 입력해주세요.">
           </fieldset>
           <fieldset class="pure-group">
             <label for="phone">연락처 :</label>
             <input id="phone" name="phone" placeholder="연락처를 입력해주세요.">
+          </fieldset>
+          <fieldset class="pure-group">
+            <label for="message">내용 :</label>
+            <textarea id="message" name="message" rows="10" placeholder="문의 사항을 입력해주세요."></textarea>
           </fieldset>
           <fieldset class="pure-group honeypot-field">
             <label for="honeypot">To help avoid spam, utilize a Honeypot technique with a hidden text field; must be empty to submit the form! Otherwise, we assume the user is a spam bot.</label>
@@ -194,7 +194,8 @@
           <button class="button-success pure-button button-xlarge">
             <i class="fa fa-paper-plane"></i>&nbsp;&nbsp;Send</button>
           <br class="clear">
-        </div>
+        </div><br class="clear">
+
         <!-- Customise the Thankyou Message People See when they submit the form: -->
         <div class="thankyou_message" style="display:none;">
           <h2>문의 주셔서 감사합니다!
@@ -203,7 +204,8 @@
       </form>
       <!-- Submit the Form to Google Using "AJAX" -->
       <script data-cfasync="false" src="form-submission-handler.js"></script>
-    <!-- END -->
+      <!-- END -->
+
     </div>
     <!-- footer -->
     <div class="footer">
@@ -216,5 +218,8 @@
     <script>
       AOS.init();
     </script>
+
+    <!-- 메일폼 -->
+    <script data-cfasync="false" type="text/javascript" src="https://cdn.rawgit.com/dwyl/html-form-send-email-via-google-script-without-server/master/form-submission-handler.js"></script>
   </body>
 </html>
