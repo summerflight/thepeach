@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>더피치 : 교육 프로그램</title>
+    <title>더피치 : 자료실</title>
     <link rel="shortcut icon" href="../img/favicon.png" />
     <link rel="stylesheet" href="style.css">
     <!-- 구글 폰트 -->
@@ -68,9 +68,9 @@
     <div class="tab-cont">
       <ul class="tabs">
         <!-- 리스트 간격 공백제거 -->
-        <li class="tab-link current">
+        <li class="tab-link">
           <a href="edu.html">교육 프로그램</a>
-        </li><li class="tab-link">
+        </li><li class="tab-link current">
           <a href="download.html">자료실</a>
         </li><li class="tab-link">
           <a href="customer.html">고객 지원</a>
@@ -78,65 +78,57 @@
       </ul>
     </div>
 
-    <!-- 교육 프로그램 -->
-    <div class="edu">
-    	<div class="edu_cont">
-        <span class="edu_title">Drone education program</span>
-        <ul class="edu_text">
-          <li><span>시간&nbsp;&nbsp;:&nbsp;&nbsp;6시간</span></li>
-          <li><span>장소&nbsp;&nbsp;:&nbsp;&nbsp;대전 본사(협의)</span></li>
-          <li><span>인원&nbsp;&nbsp;:&nbsp;&nbsp;4명 내외</span></li>
-          <li><span>교육비&nbsp;&nbsp;:&nbsp;&nbsp;290만원(교육용 키트 포함)</span></li>
-          <br>
-          <li><span>교육 일정</span></li>
-    		</ul>
+    <!-- 자료실 -->
+    <div class="down">
+      <span class="down_title">THE PEACH-GS 설치 및 세팅 방법</span><br>
+
+      <div class="left_title">
+        <h2 style="color:#2EA7E0;">다운로드 링크</h2>
       </div>
-      <!-- 교육 일정 표 -->
-      <div class="edu_table">
-        <table>
-          <thead>
-            <tr>
-              <th>시간</th>
-              <th>교육 주제</th>
-              <th>내용</th>
-              <th class="bn">비고</th>
-            </tr>
-          </thead>
-          <tbody>
-            <tr>
-              <td>10:00~10:20</td>
-              <td class="kj">오리엔테이션</td>
-              <td class="ny">· 수업 내용 및 일정 안내</td>
-              <td class="rn">20분</td>
-            </tr>
-            <tr>
-              <td>10:20~12:00</td>
-              <td class="kj">드론 Kit 설명 및 조립</td>
-              <td class="ny">· Kit 구성품 설명<br>· 기체 조립</td>
-              <td class="rn">1시간 40분</td>
-            </tr>
-            <tr>
-              <td>12:00~13:00</td>
-              <td class="kj">점심 식사</td>
-              <td class="ny">· 점심 식사</td>
-              <td class="rn">1시간</td>
-            </tr>
-            <tr>
-              <td>13:00~15:00</td>
-              <td class="kj">소프트웨어 교육</td>
-              <td class="ny">· Ardupilot과 PX4 소개 및 펌웨어 빌드 실습<br>· GCS 사용법 교육 및 실습</td>
-              <td class="rn">2시간</td>
-            </tr>
-            <tr>
-              <td>15:00~17:00</td>
-              <td class="kj">비행 테스트</td>
-              <td class="ny">· 기본 비행 시험</td>
-              <td class="rn">2시간</td>
-            </tr>
-          </tbody>
-          <caption>담당자 : 서정수 연구원 (intseo@thepeach.kr, ☎ 042-721-9297)</caption>
-        </table>
+      <div class="btn">
+        <div class="down_btn">
+          <a href="#">THE PEACH-GS</a>
+        </div>
+        <p>THE PEACH-GS 최신버전 다운로드</p>
       </div>
+      <div class="btn">
+        <div class="down_btn">
+          <a href="#">MANUAL</a>
+        </div>
+        <p>THE PEACH-GS 설치 매뉴얼 다운로드</p>
+      </div><br class="clear">
+
+      <div class="left_title">
+        <h2 style="color:#2EA7E0;">설치 및 세팅 방법</h2>
+      </div>
+      <div class="right_text">
+        <p>
+          <b>Windows 버전</b><br>
+          <a href="https://github.com/ThePeach-Drone/qgroundcontrol/releases" style="text-decoration:underline;" target="_blank">https://github.com/ThePeach-Drone/qgroundcontrol/releases</a> 페이지에서 릴리즈 버전 윈도우 설치 파일을 받은 후, 설치파일을 실행시켜 설치<br><br>
+          <b>Linux 버전</b><br>
+          <a href="https://github.com/ThePeach-Drone/qgroundcontrol/releases" style="text-decoration:underline;" target="_blank">https://github.com/ThePeach-Drone/qgroundcontrol/releases</a> 페이지에서 릴리즈 버전 Appimage를 다운받아 chmod +x ./Peach-GS.AppImage 명령어로 실행 권한을 부여하고, ./Peach-GS.Appimage로 실행<br>
+          <br><br><br>
+          <b style="font-size:22px;">PEACH-GS 펌웨어 다운로드 및 설치하기</b><br><br><br>
+          <b>필요한 준비물</b><br><br>
+          THE PEACH-FCC-K1(R1), Micro 5Pin 케이블, THE PEACH-GS를 설치한 컴퓨터<br><br><br>
+          <b>펌웨어 다운로드 및 설치 과정</b><br><br>
+          1. Peach-GS 실행 후 ThePeach 아이콘 클릭<br><br>
+          2. ThePeach 아이콘 클릭하여 메뉴 진입 후 Vehicle Setup 클릭<br>
+        </p>
+        <img src="img/howto_a.png" alt="Vehicle Setup" Vehicle Setup>
+        <p><br>
+          3. Vehicle Setup에서 Firmware 클릭 <br></p>
+        <img src="img/howto_b.png" alt="Firmware" Firmware>
+        <p><br>
+          4. 컴퓨터에 연결된 마이크로 5핀 케이블과 더피치 FC를 연결<br><br>
+          5. 아래와 같은 화면이 뜨는 것을 확인한 후, 보드 타입과 펌웨어를 선택한 후 OK 버튼 클릭<br>
+        </p>
+        <img src="img/howto_c.png" alt="Type" Type>
+        <p><br>
+          6. GS에서 자동으로 펌웨어 다운로드 및 보드 프로그래밍 진행 (설치 완료)<br>
+        </p>
+        <img src="img/howto_f.png" alt="Finish" Finish>
+      </div><br class="clear">
     </div>
 
     <!-- footer -->

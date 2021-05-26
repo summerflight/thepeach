@@ -169,7 +169,7 @@ ul.tabs li {
   margin: auto 0;
   padding: 15px;
   display: inline-block;
-  width: 45%;
+  width: 30%;
   cursor: pointer;
   border: 1px solid #eaeaea;
   text-align: center;
@@ -185,14 +185,14 @@ ul.tabs li.current a {
 }
 
 /* -------------------------------------------------------------------------- */
-.edu_cont, .cus01 {
+.edu_cont, .cus01, .down {
   width: 1280px;
   margin: 0 auto;
   padding-top: 50px;
   text-align: center;
 }
 
-.cus01 {
+.cus01, .down {
   padding-bottom: 40px;
 }
 
@@ -245,7 +245,7 @@ ul.tabs li.current a {
   padding-bottom: 20px;
 }
 
-.cus_kor {
+.cus_kor, .down_title {
   font-weight: 500;
   font-size: 28px;
   letter-spacing: -0.23px;
@@ -328,6 +328,70 @@ td {
 
 .kj {
   background-color: #f5fafe;
+}
+/* -------------------------------------------------------------------------- */
+/* 버튼 */
+.down_btn {
+  width: 90%;
+  background-color: #2EA7E0;
+  border: none;
+  border-radius: 10px;
+  padding: 20px 0;
+  text-align: center;
+  display: inline-block;
+  margin: 4px;
+  cursor: pointer;
+}
+
+.down_btn:hover {
+  background-color: #96d3f0;
+}
+
+.down_btn a {
+  font-family: 'Poppins', sans-serif;
+  font-weight:500;
+  font-size: 22px;
+  text-decoration: none;
+  color: #fff;
+}
+
+.btn {
+  padding-top: 60px;
+  width: 35%;
+  float: left;
+}
+
+.right_text {
+  padding-top: 45px;
+  padding-bottom: 95px;
+  width: 70%;
+  text-align: left;
+  float: right;
+  border-top: 1px solid #ccc;
+}
+
+.left_title {
+  padding-top: 60px;
+  width: 30%;
+  float: left;
+}
+
+.right_text p {
+  font-size: 18px;
+  line-height: 1.5;
+}
+
+.right_text img {
+  margin: 0;
+  padding-top: 7px;
+  width: 100%;
+}
+
+.btn p {
+  margin: 0;
+  padding: 7px;
+  padding-bottom: 45px;
+  color: #858585;
 }
 
 /* -------------------------------------------------------------------------- */
