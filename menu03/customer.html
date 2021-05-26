@@ -80,8 +80,8 @@
 
     <!-- 고객 지원 -->
     <div class=cus01>
-      <span class="cus_kor">빠르고 정확한 답변을 드릴 수 있도록 하겠습니다.</span><br>
-      <p class="cus_text">
+      <span class="cus_kor">빠르고 정확한 답변을 드리겠습니다.</span><br>
+      <p class="cus_text" style="padding-bottom:0;">
         <span>더피치에서는 드론 기반 데이터 서비스 관련 문의 및 구직, 협력 파트너를 찾고 있습니다.</span>
       </p>
       <div class="cus01_mail">
@@ -98,20 +98,18 @@
               <label for="name">성함 :</label>
               <input id="name" name="name" placeholder="성함을 입력해주세요.">
             </fieldset>
-            <fieldset class="pure-group" style="width:48%; float:left;">
+            <fieldset class="pure-group">
               <label for="email">이메일 :</label>
               <input id="email" name="email" type="email" value="" required="" placeholder="이메일 주소를 입력해주세요.">
             </fieldset>
-            <fieldset class="pure-group" style="width:48%; float:right;">
+            <fieldset class="pure-group">
               <label for="phone">연락처 :</label>
               <input id="phone" name="phone" placeholder="연락처를 입력해주세요.">
             </fieldset>
-            <br class="clear">
             <fieldset class="pure-group">
               <label for="message">내용 :</label>
               <textarea id="message" name="message" rows="10" placeholder="문의 사항을 입력해주세요."></textarea>
             </fieldset>
-            <br class="clear">
             <fieldset class="pure-group honeypot-field">
               <label for="honeypot">To help avoid spam, utilize a Honeypot technique with a hidden text field; must be empty to submit the form! Otherwise, we assume the user is a spam bot.</label>
               <input id="honeypot" type="text" name="honeypot" value="">
@@ -119,7 +117,8 @@
             <button class="button-success pure-button button-xlarge">
               <i class="fa fa-paper-plane"></i>&nbsp;&nbsp;Send</button>
             <br class="clear">
-          </div>
+          </div><br class="clear">
+
           <!-- Customise the Thankyou Message People See when they submit the form: -->
           <div class="thankyou_message" style="display:none;">
             <h2>문의 주셔서 감사합니다!
@@ -128,7 +127,7 @@
         </form>
         <!-- Submit the Form to Google Using "AJAX" -->
         <script data-cfasync="false" src="form-submission-handler.js"></script>
-      <!-- END -->
+        <!-- END -->
       </div>
     </div>
     <div class="cus02">

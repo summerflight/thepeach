@@ -404,10 +404,6 @@ aside {
   margin-bottom: 2em;
 }
 
-textarea {
-  width: 100%;
-}
-
 .content-head {
   font-weight: 400;
   text-transform: uppercase;
@@ -430,20 +426,33 @@ textarea {
   font-size: 125%;
 }
 
+.form-elements {
+  width: 100%;
+  float: right;
+  border-top: 1px solid #eaeaea;
+  border-bottom: 1px solid #ccc;
+  padding: 40px;
+  margin-top: 10px;
+}
+
 .form-elements button {
   float: right;
 }
 
-.form-elements {
-  text-align: left;
+#name, #email, #phone {
+  float: right;
+  width: 90%;
 }
 
-#name {
-  width: 100%;
+textarea {
+  width: 90%;
+  float: right;
 }
 
-#email, #phone {
-  width: 100%;
+.pure-form label {
+  float: left;
+  width: 5%;
+  text-align: right;
 }
 
 .honeypot-field {
