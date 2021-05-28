@@ -129,11 +129,16 @@ header {
   margin: 0px auto;
   margin-top: 148px;
   position: relative;
+  text-align: center;
 }
 
-.maincont img {
-  max-width: 100%;
-  min-height: auto;
+.mainimg {
+  width: 100%;
+  min-height: 800px;
+  background-image: url("img/main2.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
 }
 
 .maintext h1 {
@@ -226,14 +231,14 @@ em {
 /* -------------------------------------------------------------------------- */
 /* 3단 이미지 관련 */
 .bx-wrapper {
- max-width: 1280px;
+  max-width: 1280px;
 }
 
 .bx-viewport {
-   width: 100%;
-   overflow: hidden;
-   position: relative;
-   height: 442px;"
+  width: 100%;
+  overflow: hidden;
+  position: relative;
+  height: 442px;"
 }
 
 .main_fac {
@@ -460,124 +465,35 @@ textarea {
   display: none;
 }
 
-/* -------------------------------------------------------------------------- */
-/* 슬라이드 관련 */
-/*
-.slideshow-container {
-  max-width: 1800px;
-  margin: auto 0;
-  position: relative;
-  display: block;
-  margin: 0px auto;
-  margin-top: 145px;
-}
-*/
-
 /* float 취소하기 */
 .clear {
   clear: both;
 }
 
-/*
-.slideshow-container .mySlides img {
-  height: 400px;
-}
-*/
-
-/* Hide the images by default */
-/*
-.mySlides {
-  display: none;
-}
-*/
-
-/* Next, previous buttons */
-/*
-.prev, .next {
-  cursor: pointer;
-  position: absolute;
-  top: 50%;
-  width: auto;
-  margin-top: -22px;
-  padding: 16px;
-  color: #f2f2f2;
-  font-weight: bold;
-  font-size: 18px;
-  transition: 0.6s ease;
-  border-radius: 0 3px 3px 0;
-  user-select: none;
-}
-*/
-
-/* Position the "next button" to the right */
-/*
-.next {
-  right: 0;
-  border-radius: 3px 0 0 3px;
-}
-*/
-
-/* On hover, add a black background color with a little bit see-through */
-/*
-.prev:hover, .next:hover {
-  background-color: rgba(0,0,0,0.8);
-}
-*/
-
-/* Caption text */
-/*
-.slidetext {
-  font-weight: bold;
-  line-height: 1.45;
-  color: #000000;
-  font-size: 46px;
-  position: absolute;
-  top: 50%;
-*/
-  /* 두 줄이니까 한줄만큼 위로 당겨 세로 가운데 정렬 */
-/*
-  margin-top: -46px;
-  width: 100%;
-  text-align: center;
-}
-*/
-
-/* The dots/bullets/indicators */
-/*
-.dot {
-  cursor: pointer;
-  height: 10px;
-  width: 10px;
-  margin: 0 2px;
-  background-color: none;
-  border-radius: 50px;
-  display: inline-block;
-  transition: background-color 0.6s ease;
-}
-*/
-
-/*
-.active, .dot:hover {
-  background-color: none;
-}
-*/
-
-/* Fading animation */
-/*
-.fade {
-  -webkit-animation-name: fade;
-  -webkit-animation-duration: 1s;
-  animation-name: fade;
-  animation-duration: 1s;
+/*스마트폰*/
+@media (min-width : 320px) and (max-width : 820px) {
+  .navbar { width: 100%; }
+  .topbar .icon { width: 100%; }
+  .mainimg { width: 100%; }
+  .cont02 { width: 100%; text-align: center; }
+  .cus_bg { width: 100%; }
+  .github, .call { width: 100%; }
+  .bx-viewport { width: 100%; }
+  .bx-wrapper { width: 100%; }
+  .cont { width: 100%; padding: 120px 60px; }
+  .form-elements { width: 100%; }
 }
 
-@-webkit-keyframes fade {
-  from {opacity: .8}
-  to {opacity: 1}
+/*테블릿*/
+@media (min-width : 821px) and (max-width : 1280px) {
+  .navbar { width: 100%; }
+  .topbar .icon { width: 100%; }
+  .mainimg { width: 100%; }
+  .cont02 { width: 100%; text-align: center; }
+  .cus_bg { width: 100%; }
+  .github, .call { width: 50%; }
+  .bx-viewport { width: 100%; }
+  .bx-wrapper { width: 100%; }
+  .cont { width: 100%; padding: 120px 60px; }
+  .form-elements { width: 100%; }
 }
-
-@keyframes fade {
-  from {opacity: .8}
-  to {opacity: 1}
-}
-*/
