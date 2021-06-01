@@ -518,4 +518,8 @@ textarea {
   .bx-wrapper { width: 100%; }
   .cont { width: 100%; padding: 120px 60px; }
   .form-elements { width: 100%; }
+  .main_fac ul { margin: 0; width: 100%; }
+  .main_fac ul li { float: left; width: 31%; height: auto; margin-bottom: 30px; margin: 0 5px; }
+  .main_fac ul li:last-child { margin-right: 0; }
+  .main_fac ul li p { padding-top: 10px; padding-bottom: 10px; }
 }
