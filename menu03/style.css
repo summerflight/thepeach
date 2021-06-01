@@ -132,11 +132,16 @@ header {
 
 /* -------------------------------------------------------------------------- */
 /* 메인 이미지 */
-.upperimg img {
+.upperimg {
   display: block;
   margin: 0px auto;
-  padding-top: 148px;
+  margin-top: 148px;
   width: 1800px;
+  min-height: 350px;
+  background-image: url("img/upper.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
 }
 
 /* -------------------------------------------------------------------------- */

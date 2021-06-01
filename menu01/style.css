@@ -543,12 +543,12 @@ ul.tabs li.current a {
   .dropdown-content { min-width: 107px; }
   .footer { padding: 75px 30px; }
   .upperimg { width: 100%; min-height: 150px !important; }
-  .int_wrap, .int02, .int_history, .int03 { width: 100%; padding: 60px 30px; }
+  .int_wrap, .int02, .int_history, .int03 { width: 100%; padding: 40px 15px; }
   .ci_wrap, .ci_cont { width: 100%; }
-  .symbol, .signature, .color { width: 100%; padding: 60px 30px; }
+  .symbol, .signature, .color { width: 100%; padding: 40px 15px; }
   .int01 img { width: 90% !important; }
   .ci_cont img { width: 100% !important; }
-  .cont { width: 100%; padding: 60px 30px; }
+  .cont { width: 100%; padding: 40px 15px; }
   .mission, .vision { padding-top: 30px; }
   .history { padding-top: 0; }
   .history_list { padding: 20px; }
@@ -568,7 +568,7 @@ ul.tabs li.current a {
   .tabs { width: 100%; }
   .tabs li { width: 26% !important; padding: 15px 10px !important; }
   .tab-cont a { font-size: 14px; }
-  .wayto { width: 100%; padding: 60px 30px; }
+  .wayto { width: 100%; padding: 40px 15px; }
 }
 
 /*반응형웹-태블릿*/
@@ -576,15 +576,16 @@ ul.tabs li.current a {
   .navbar { width: 100%; }
   .topbar .icon { width: 100%; }
   .upperimg { width: 100%; height: 350px; }
-  .int_wrap, .int02, .int_history, .int03 { width: 100%; padding: 120px 60px; }
+  .int_wrap, .int02, .int_history, .int03 { width: 100%; padding: 60px 30px; }
   .int01 img { width: 90% !important; }
   .history_list > ul { width: 100%; min-width: auto; padding: 0 20px; }
   .ci_cont img { width: 90% !important; }
+  .mission, .vision { padding-top: 60px; }
   .ci_wrap, .ci_cont { width: 100%; }
   .signature, .color { width: 100%; padding: 60px 30px; }
   .symbol { width: 100%; padding: 0 30px; padding-bottom: 60px; }
   .tabs { width: 100%; }
   .tabs li { width: 28% !important; }
   .tab-cont a { font-size: 14px; }
-  .wayto { width: 100%; padding: 120px 60px; }
+  .wayto { width: 100%; padding: 60px 30px; }
 }
