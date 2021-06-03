@@ -410,6 +410,10 @@ ul.tabs li.current a {
 
 /* -------------------------------------------------------------------------- */
 /* 조직도 */
+.org_img {
+  display: none;
+}
+
 .tree {
   display: inline-block;
 }
@@ -543,16 +547,17 @@ ul.tabs li.current a {
   .dropdown-content { min-width: 107px; }
   .footer { padding: 75px 30px; }
   .upperimg { width: 100%; min-height: 150px !important; }
-  .int_wrap, .int02, .int_history, .int03 { width: 100%; padding: 40px 15px; }
+  .int_wrap, .int02, .int_history, .int03, .ci_wrap { width: 100%; padding: 40px 15px; }
   .ci_wrap, .ci_cont { width: 100%; }
-  .symbol, .signature, .color { width: 100%; padding: 40px 15px; }
-  .int01 img { width: 90% !important; }
+  .symbol { padding-bottom: 50px; }
+  .symbol img, .signature_cont { padding-bottom: 20px; }
+  .int01 img { width: 85% !important; }
   .ci_cont img { width: 100% !important; }
   .cont { width: 100%; padding: 40px 15px; }
   .mission, .vision { padding-top: 30px; }
   .history { padding-top: 0; }
   .history_list { padding: 20px; }
-  .history_list .list_line { top: 46px; left: 19px; width: 1px; height: 90%; }
+  .history_list .list_line { top: 46px; left: 19px; width: 1px; height: 95%; }
   .history_list > ul { width: 100%; min-width: auto; position: relative; top: 0; left: 0; transform: translate(0); }
   .history_list > ul > li { float: none; width: 100%; transform: translateY(0); padding: 0; }
   .history_list > ul > li:nth-of-type(2n) .list_box { padding: 0 0 40px 30px; }
@@ -569,6 +574,13 @@ ul.tabs li.current a {
   .tabs li { width: 26% !important; padding: 15px 10px !important; }
   .tab-cont a { font-size: 14px; }
   .wayto { width: 100%; padding: 40px 15px; }
+  .int_title, .int_title02, .ci_title, .map_title { font-size: 24px; }
+  .int01 { padding-bottom: 10px; }
+  .tree { display: none; }
+  .org_img { display: block; }
+  .org_img img { padding-top: 20px; }
+  .signature_title, .color_title { margin-top: 60px; }
+  .signature { padding-bottom: 60px; }
 }
 
 /*반응형웹-태블릿*/
@@ -576,8 +588,8 @@ ul.tabs li.current a {
   .navbar { width: 100%; }
   .topbar .icon { width: 100%; }
   .upperimg { width: 100%; height: 350px; }
-  .int_wrap, .int02, .int_history, .int03 { width: 100%; padding: 60px 30px; }
-  .int01 img { width: 90% !important; }
+  .int_wrap, .int02, .int_history, .int03, .ci_wrap { width: 100%; padding: 60px 30px; }
+  .int01 img { width: 70% !important; }
   .history_list > ul { width: 100%; min-width: auto; padding: 0 20px; }
   .ci_cont img { width: 90% !important; }
   .mission, .vision { padding-top: 60px; }
@@ -588,4 +600,8 @@ ul.tabs li.current a {
   .tabs li { width: 28% !important; }
   .tab-cont a { font-size: 14px; }
   .wayto { width: 100%; padding: 60px 30px; }
+  .tree { display: none; }
+  .org_img { display: block; }
+  .org_img img { width: 80% !important; padding-top: 35px; }
+  .signature_title, .color_title { margin-top: 30px; }
 }
