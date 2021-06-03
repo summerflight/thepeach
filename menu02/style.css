@@ -235,7 +235,9 @@ h2 {
 
 h3 {
   margin: 0;
-  padding-top: 80px;
+  text-align: center;
+  font-size: 26px;
+  font-weight: 500;
 }
 
 .dan {
@@ -276,6 +278,10 @@ td {
   padding: 5px;
 }
 
+.etc td {
+  border: 1px solid #ccc;
+}
+
 tr {
   border: none;
 }
@@ -297,16 +303,21 @@ td img {
   font-size: 15px !important;
 }
 
-.k1h ul, .r1h ul {
+.k1h ul, .r1h ul, .etc ul {
   padding: 0;
 }
 
-.k1h li, .r1h li {
+.etc li {
+  color: #808080;
+  list-style: none;
+}
+
+.k1h li, .r1h li, .etc li {
   padding: 0 !important;
 }
 
 .k1 li, .r1 li, .k1h li, .r1h li {
-  padding:10px 0;
+  padding: 10px 0;
   font-size: 18px;
   list-style: none;
 }
@@ -346,7 +357,7 @@ td img {
   width: 1em;
 }
 
-.r1h ul::before {
+.r1h ul::before, .etc li::before  {
   content: "\2022";
   color: #2EA7E0;
   font-size: 22px;
