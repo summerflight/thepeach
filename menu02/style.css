@@ -431,12 +431,17 @@ td img {
   .tab-cont a { font-size: 14px; }
   .cont { width: 100%; padding: 60px 30px; }
   /*--------------------------------------------------------------------------*/
-  .product { width: 100%; padding: 40px 15px; }
-  .product img { width: 100%; }
-  .symbol, .signature, .color { width: 100%; padding: 40px 15px; }
-  .mission, .vision { padding-top: 30px; }
-  .cont-box1 { padding: 20px 20px 40px; }
-  .cont-box2_t { font-size: 22px; line-height: 32px; }
+  .product, .solution, .solcont2, .sol_1, .sol_2, .service { width: 100%; padding: 40px 15px; }
+  .sol_text, .dan { width: 100%; }
+  .product img, .solution img, .solcont2 img, .service img { width: 100%; }
+  .sol_1, .sol_2 { width: 100%; margin: 0; padding: 0 15px; }
+  .sol_1 ul, .sol_2 ul { width: 100%; font-size: 17px; padding: 0; margin: 0; }
+  .sol_1 li, .sol_2 li { width: 100%; font-size: 15px; padding-bottom: 5px; }
+  .solcont img, .solcont2 img { padding: 10px 0; }
+  .solution_bg { width: 100%; }
+  .pro_title, .sol_title, .ser_title { font-size: 24px; }
+  .dan { padding: 40px 0 !important; }
+  .k1, .r1, .etc { padding: 0; }
 }
 
 /*반응형웹-태블릿*/
@@ -448,6 +453,11 @@ td img {
   .tabs li { width: 28% !important; }
   .tab-cont a { font-size: 14px; }
   /*--------------------------------------------------------------------------*/
-  .product { width: 100%; padding: 60px 30px; }
-  .product img { width: 100%; }
+  .product, .solution, .solcont2, .service { width: 100%; padding: 60px 30px; }
+  .sol_text { width: 100%; }
+  .solution img, .solcont2 img, { width: 100%; }
+  .sol_1, .sol_2 { margin: 0; padding: 0; }
+  .k1, .r1, .etc { padding: 0; }
+  .sol_2 ul { padding-left: 0px; }
+  .solcont img, .solcont2 img, .service img { width: 90%; }
 }
