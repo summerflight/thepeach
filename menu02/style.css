@@ -193,7 +193,7 @@ ul.tabs li.current a {
 .product, .solution, .service {
   width: 1280px;
   margin: 0 auto;
-  padding-top: 50px;
+  padding-top: 60px;
   padding-bottom: 95px;
   text-align: center;
 }
@@ -201,12 +201,13 @@ ul.tabs li.current a {
 .solcont2 {
   width: 1280px;
   margin: 0 auto;
-  padding-top: 90px;
-  padding-bottom: 95px;
+  padding-top: 100px;
+  padding-bottom: 100px;
   width: 100%;
 }
 
 .pro_title, .sol_title, .ser_title {
+  display: block;
   font-weight: 500;
   font-size: 28px;
   letter-spacing: -0.23px;
@@ -217,8 +218,141 @@ ul.tabs li.current a {
   width: 1280px;
 }
 
-.product img {
-  padding-top: 40px;
+.procont {
+  text-align: center;
+}
+
+.procont img {
+  padding: 40px 0;
+  float: left;
+}
+
+h2 {
+  margin: 0;
+  padding-top: 160px;
+  font-size: 32px;
+}
+
+h3 {
+  margin: 0;
+  padding-top: 80px;
+}
+
+.dan {
+  float: left;
+  width: 50%
+}
+
+.dan img {
+  padding-top: 85px;
+  padding-bottom: 60px;
+}
+
+.k1, .r1, .etc {
+  display: block;
+  padding: 0 10%;
+  padding: 0 auto;
+  border-top: 1px solid #eaeaea;
+}
+
+.pro_text {
+  color: #808080;
+  font-size: 18px;
+  letter-spacing: -0.23px;
+  padding-bottom: 75px;
+}
+
+table {
+  padding: 0;
+  padding-bottom: 80px;
+  width: 100%;
+}
+
+td {
+  width: 20%;
+  border: 1px solid #777777;
+  font-weight: 400;
+  font-size: 15px;
+  padding: 5px;
+}
+
+tr {
+  border: none;
+}
+
+td img {
+  padding: 0 !important;
+  width: 100%;
+}
+
+.k1h, .r1h {
+  float: left;
+  width: 50%;
+  padding-right: 15px;
+  padding-bottom: 85px;
+}
+
+.k1h ul, .k1h li, .r1h ul, .r1h li {
+  text-align: left;
+  font-size: 15px !important;
+}
+
+.k1h ul, .r1h ul {
+  padding: 0;
+}
+
+.k1h li, .r1h li {
+  padding: 0 !important;
+}
+
+.k1 li, .r1 li, .k1h li, .r1h li {
+  padding:10px 0;
+  font-size: 18px;
+  list-style: none;
+}
+
+.k1 li::before {
+  content: "\2022";
+  color: #ed798d;
+  font-size: 22px;
+  font-weight: bold;
+  display: inline-block;
+  width: 1em;
+}
+
+.r1 li::before {
+  content: "\2022";
+  color: #2EA7E0;
+  font-size: 22px;
+  font-weight: bold;
+  display: inline-block;
+  width: 1em;
+}
+
+.k1h li::before, .r1h li::before {
+  display: none;
+}
+
+.k1h li, .r1h li {
+  color: #808080;
+}
+
+.k1h ul::before {
+  content: "\2022";
+  color: #ed798d;
+  font-size: 22px;
+  font-weight: bold;
+  display: inline-block;
+  width: 1em;
+}
+
+.r1h ul::before {
+  content: "\2022";
+  color: #2EA7E0;
+  font-size: 22px;
+  font-weight: bold;
+  display: inline-block;
+  width: 1em;
 }
 
 .solution_bg {
