@@ -526,6 +526,8 @@ textarea {
   button { width: 100%; margin-bottom: 40px; }
   .edu_title { padding-bottom: 0px; }
   .edu_table { overflow-x:auto; }
+  .edu_text { padding-left: 20px; }
+
 }
 
 /*반응형웹-태블릿*/
