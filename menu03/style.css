@@ -260,13 +260,20 @@ ul.tabs li.current a {
   margin: 0;
   padding-top: 10px;
   padding-bottom: 30px;
-  font-weight: 300;
+  font-weight: normal;
+  color: #808080;
   font-size: 16px;
 }
 
 p {
-  font-weight: 300;
+  font-weight: normal;
   font-size: 16px;
+  color: #808080;
+}
+
+b {
+  font-size: 17px;
+  color: black;
 }
 
 .eduimg img {
@@ -283,7 +290,7 @@ p {
 .edu_cont ul {
   text-align: left;
   font-size: 16px;
-  font-weight: 300;
+  font-weight: normal;
   list-style-type: none;
   line-height: 1.8;
 }
@@ -351,7 +358,6 @@ td {
 /* 버튼 */
 .down_btn {
   width: 95%;
-  background-color: #6f6f6f;
   border: none;
   border-radius: 10px;
   padding: 20px 0;
@@ -359,6 +365,8 @@ td {
   display: inline-block;
   margin: 4px;
   cursor: pointer;
+  text-shadow: 0 1px 1px rgb(0 0 0 / 20%);
+  background: #2EA7E0;
 }
 
 .down_btn:hover {
@@ -409,7 +417,9 @@ td {
   margin: 0;
   padding: 7px;
   padding-bottom: 45px;
-  color: #858585;
+  color: #808080;
+  font-size: 16px;
+  font-weight: normal;
 }
 
 /* -------------------------------------------------------------------------- */
