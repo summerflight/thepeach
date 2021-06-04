@@ -339,7 +339,9 @@ ul.tabs li.current a {
 }
 
 .ci_wrap p, .int_cont p, .int02 p {
-  font-weight: 300;
+  font-weight: normal;
+  color: #808080;
+  font-size: 16px;
 }
 
 .int_cont p b, .int_history b {
@@ -532,6 +534,7 @@ ul.tabs li.current a {
   margin-bottom: 40px;
 }
 
+.ci_cont b { color: #2EA7E0; }
 
 /*----------------------------------------------------------------------------*/
 /*반응형웹-스마트폰*/
@@ -581,6 +584,7 @@ ul.tabs li.current a {
   .org_img img { padding-top: 20px; }
   .signature_title, .color_title { margin-top: 60px; }
   .signature { padding-bottom: 60px; }
+  .int_text, .ci_cont p { text-align: justify; }
 }
 
 /*반응형웹-태블릿*/
