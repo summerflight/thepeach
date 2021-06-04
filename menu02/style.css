@@ -260,20 +260,26 @@ h3 {
 .pro_text {
   color: #808080;
   font-size: 18px;
+  font-weight: 300;
   letter-spacing: -0.23px;
   padding-bottom: 75px;
 }
 
-table {
+.table {
   padding: 0;
   padding-bottom: 80px;
   width: 100%;
+  table-layout:fixed;
+}
+
+.table--min {
+  min-width: 1000px;
 }
 
 td {
   width: 20%;
   border: 1px solid #777777;
-  font-weight: 400;
+  font-weight: 300;
   font-size: 15px;
   padding: 5px;
 }
@@ -314,6 +320,7 @@ td img {
 
 .k1h li, .r1h li, .etc li {
   padding: 0 !important;
+  font-weight: 300;
 }
 
 .k1 li, .r1 li, .k1h li, .r1h li {
@@ -440,8 +447,16 @@ td img {
   .solcont img, .solcont2 img { padding: 10px 0; }
   .solution_bg { width: 100%; }
   .pro_title, .sol_title, .ser_title { font-size: 24px; }
-  .dan { padding: 40px 0 !important; }
+  .dan { padding: 20px 0 !important; }
   .k1, .r1, .etc { padding: 0; }
+  .table-box { overflow-x: auto; }
+  .k1r1 { display: none; }
+  .pro_text { font-size: 16px; padding-top: 15px; padding-bottom: 60px; }
+  .dan img { padding-bottom: 0; padding-top: 40px; width: 80% !important; padding: 0 10% !important;}
+  .dan h2 { padding-top: 0; float: left !important; font-size: 26px !important; }
+  .dan p { text-align: left !important; font-size: 17px !important; float: left !important; }
+  .k1, .r1, .etc { border-top: none; }
+  h3 { text-align: center !important; padding-left: 0 !important; }
 }
 
 /*반응형웹-태블릿*/
@@ -460,4 +475,5 @@ td img {
   .k1, .r1, .etc { padding: 0; }
   .sol_2 ul { padding-left: 0px; }
   .solcont img, .solcont2 img, .service img { width: 90%; }
+  .table-box { overflow-x: auto; }
 }
