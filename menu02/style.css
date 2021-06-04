@@ -259,8 +259,8 @@ h3 {
 
 .pro_text {
   color: #808080;
-  font-size: 18px;
-  font-weight: 300;
+  font-size: 17px;
+  font-weight: normal;
   letter-spacing: -0.23px;
   padding-bottom: 75px;
 }
@@ -279,7 +279,7 @@ h3 {
 td {
   width: 20%;
   border: 1px solid #777777;
-  font-weight: 300;
+  font-weight: normal;
   font-size: 15px;
   padding: 5px;
 }
@@ -320,7 +320,7 @@ td img {
 
 .k1h li, .r1h li, .etc li {
   padding: 0 !important;
-  font-weight: 300;
+  font-weight: normal;
 }
 
 .k1 li, .r1 li, .k1h li, .r1h li {
@@ -399,13 +399,14 @@ td img {
 }
 
 .sol_1 ul, .sol_2 ul {
-  font-size: 20px;
-  font-weight: 400;
+  font-size: 18px;
+  font-weight: 500;
 }
 
 .sol_1 li, .sol_2 li {
-  font-size: 17px;
-  font-weight: 300;
+  font-size: 16px;
+  font-weight: normal;
+  color: #808080;
   list-style: none;
   margin-left: 0px;
 }
