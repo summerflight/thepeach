@@ -260,6 +260,13 @@ ul.tabs li.current a {
   margin: 0;
   padding-top: 10px;
   padding-bottom: 30px;
+  font-weight: 300;
+  font-size: 16px;
+}
+
+p {
+  font-weight: 300;
+  font-size: 16px;
 }
 
 .eduimg img {
@@ -275,7 +282,8 @@ ul.tabs li.current a {
 
 .edu_cont ul {
   text-align: left;
-  font-size: 17px;
+  font-size: 16px;
+  font-weight: 300;
   list-style-type: none;
   line-height: 1.8;
 }
@@ -297,9 +305,14 @@ ul.tabs li.current a {
   text-align: center;
 }
 
-table {
+.table {
+  table-layout: fixed;
   width: 100%;
   border-collapse: collapse;
+}
+
+.table--min {
+  min-width: 1000px;
 }
 
 caption {
@@ -382,7 +395,7 @@ td {
 }
 
 .right_text p {
-  font-size: 18px;
+  font-size: 16px;
   line-height: 1.5;
 }
 
@@ -502,6 +515,7 @@ textarea {
   #name, #email, #phone, #message { width: 100%; }
   button { width: 100%; margin-bottom: 40px; }
   .edu_title { padding-bottom: 0px; }
+  .edu_table { overflow-x:auto; }
 }
 
 /*반응형웹-태블릿*/
@@ -520,4 +534,5 @@ textarea {
   .pure-form label { width: 100%; text-align: left;}
   #name, #email, #phone, #message { width: 100%; }
   .form-elements { padding: 0 40px; }
+  .edu_table { overflow-x:auto; }
 }
