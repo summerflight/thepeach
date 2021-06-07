@@ -75,7 +75,7 @@ header {
   color: black;
   min-width: 160px;
   padding: 40px;
-  background-color: inherit;
+  background-color: rgba(256,256,256,0);
   font-family: inherit; /* Important for vertical align on mobile phones */
   margin: 0; /* Important for vertical align on mobile phones */
 }
