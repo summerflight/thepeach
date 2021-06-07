@@ -105,8 +105,7 @@ header {
 
 /* Add a grey background color to dropdown links on hover */
 .dropdown-content a:hover {
-  color: #2EA7E0;
-  font-weight: 600;
+  color: gray;
 }
 
 /* Show the dropdown menu on hover */
