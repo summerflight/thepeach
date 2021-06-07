@@ -105,8 +105,7 @@ header {
 
 /* Add a grey background color to dropdown links on hover */
 .dropdown-content a:hover {
-  color: #2EA7E0;
-  font-weight: 600;
+  color: gray;
 }
 
 /* Show the dropdown menu on hover */
@@ -452,7 +451,7 @@ td img {
   .k1, .r1, .etc { padding: 0; }
   .table-box { overflow-x: auto; }
   .k1r1 { display: none; }
-  .pro_text { font-size: 16px; padding-top: 15px; padding-bottom: 60px; }
+  .pro_text { text-align: justify; font-size: 16px; padding-top: 15px; padding-bottom: 60px; }
   .dan img { padding-bottom: 0; padding-top: 40px; width: 80% !important; padding: 0 10% !important;}
   .dan h2 { padding-top: 0; float: left !important; font-size: 26px !important; }
   .dan p { text-align: left !important; font-size: 17px !important; float: left !important; }
