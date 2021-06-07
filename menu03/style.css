@@ -70,7 +70,7 @@ header {
   color: black;
   min-width: 160px;
   padding: 40px;
-  background-color: inherit;
+  background-color: rgba(256,256,256,0);
   font-family: inherit; /* Important for vertical align on mobile phones */
   margin: 0; /* Important for vertical align on mobile phones */
 }
@@ -315,6 +315,7 @@ b {
   table-layout: fixed;
   width: 100%;
   border-collapse: collapse;
+  font-size: 15px;
 }
 
 .table--min {
@@ -520,13 +521,13 @@ textarea {
   .cus01_mail { margin: 0; }
   .form-elements { padding: 0; }
   .github, .call { display: block; width: 100%; }
-  .pure-form label { width: 100%; text-align: left;}
+  .pure-form label { display: none;}
   #name, #email, #phone, #message { width: 100%; }
   button { width: 100%; margin-bottom: 40px; }
   .edu_title { padding-bottom: 0px; }
   .edu_table { overflow-x:auto; }
   .edu_text { padding-left: 20px; }
-
+  .cus_text { padding-bottom: 15px !important; }
 }
 
 /*반응형웹-태블릿*/
