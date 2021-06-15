@@ -159,8 +159,7 @@
       <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
       <!-- Style The Contact Form How Ever You Prefer -->
       <link rel="stylesheet" href="style.css">
-      <form class="gform pure-form pure-form-stacked" method="POST" data-email="example@email.net" action="https://script.google.com/macros/s/AKfycbx_Vs8QuFiRvvVbVSQzl_-PzEY-I9rLRQ6J6wawBw/exec" data-aos="fade" data-aos-duration="2000">
-        <!-- change the form action to your script url -->
+      <form class="gform pure-form pure-form-stacked" method="POST" data-email="example@email.net" action="https://script.google.com/macros/s/AKfycbxH88ttkCTe4WfqFJrXpuERpLl303Hr2CF-DwhKNjpbQUdsVpU/exec">
         <div class="form-elements">
           <fieldset class="pure-group">
             <label for="name">성함 :</label>
@@ -183,14 +182,19 @@
             <input id="honeypot" type="text" name="honeypot" value="">
           </fieldset>
           <button class="button-success pure-button button-xlarge">
-            <i class="fa fa-paper-plane"></i>&nbsp;&nbsp;Send</button>
+            <i class="fa fa-paper-plane"></i>&nbsp;&nbsp;Send
+          </button>
           <br class="clear">
         </div><br class="clear">
-
-        <!-- Customise the Thankyou Message People See when they submit the form: -->
-        <div class="thankyou_message" style="display:none;">
-          <h2>문의 주셔서 감사합니다!
-          확인 후 회신드리겠습니다.</h2>
+        <!-- send  -->
+        <div class="thankyou_message" style="display: none;">
+          <section>
+            <h3>문의 감사합니다.</h3>
+            <p>확인 후 빠르게 답변 드리겠습니다.</p>
+            <div class="btn_box">
+              <a href="index.html" class="commbtn gray close">닫기</a>
+            </div>
+          </section>
         </div>
       </form>
       <!-- Submit the Form to Google Using "AJAX" -->
@@ -209,8 +213,5 @@
     <script>
       AOS.init();
     </script>
-
-    <!-- 메일폼 -->
-    <script data-cfasync="false" type="text/javascript" src="https://cdn.rawgit.com/dwyl/html-form-send-email-via-google-script-without-server/master/form-submission-handler.js"></script>
   </body>
 </html>
