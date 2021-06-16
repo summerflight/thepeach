@@ -270,7 +270,7 @@ p {
   color: #808080;
 }
 
-b {
+.right_text b {
   font-size: 17px;
   color: black;
 }
@@ -503,7 +503,7 @@ textarea {
 }
 
 .commbtn.gray {
-  background:#3c4147;
+  background:#A4A4A4;
   color: #fff;
 }
 
